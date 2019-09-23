@@ -10,9 +10,7 @@
 <section class="bcls-section">
   <p>By default, when a Gallery portal experience is published, anyone with the site URL will be able to access the site. Access control profiles can be created to restrict access to a Gallery portal experience. Access control profiles are created as part of the Gallery settings and then the profiles are assigned to sites. Access control profiles can be created to restrict access based upon:</p>
   <ul>
-    <li><a href="#ip">IP address</a></li>
     <li><a href="#sso">Single sign-on</a></li>
-    <li><a href="#accesscode">Access code</a></li>
   </ul>
   <p>To create an access control profile, follow these steps:</p>
   <ol class="bcls-tasklist">
@@ -42,18 +40,6 @@
     <li>Create additional Access Control Profiles as needed.</li>
   </ol>
   <p>To edit or delete an access control profile, click the edit (<img alt="edit icon" src="http://img.brightcove.com/node16450-edit-icon.png" />) or delete (<img alt="delete icon" src="http://img.brightcove.com/node16450-delete-icon.png" />) buttons associated with the access control profile. Once access control profiles have been created, they can be assigned to a site as part of the site properties. For information, see <a href="/node/14029">Controlling Access to a Portal Experience</a>.</p>
-</section>
-<section class="bcls-section">
-  <h2 id="ip">Configuring IP restriction</h2>
-  <p>When creating an access control profile that uses IP restriction, viewers with an IP address outside of the predefined range will receive an error when they try to access the site.</p>
-  <p>To configure an access control profile to use IP restriction, follow these steps:</p>
-  <ol class="bcls-tasklist">
-    <li>Select the <strong>Limited by IP address </strong> option.</li>
-    <li>Enter a range of IP addresses that can access the site. <a href="http://tools.ietf.org/html/rfc4632">CIDR block notation</a> is also supported.
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="configure ip address" src="https://img.brightcove.com/node16450-ip-address.png" /></figure>
-    </li>
-    <li>Click <strong>Save</strong>.</li>
-  </ol>
 </section>
 <section class="bcls-section">
   <h2 id="sso">Configuring Single Sign-on</h2>
@@ -89,65 +75,6 @@
     <li>(Optional) Check <strong>Expose all attributes</strong> to expose all of the SAML attributes for use in external JavaScript.</li>
     <li>Click <strong>Save</strong>.</li>
   </ol>
-</section>
-<section class="bcls-section">
-  <h2 id="accesscode">Configuring an access code</h2>
-  <p>When a site has an access code applied, viewers will be prompted to provide the correct access code when the access the site URL.</p>
-  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="access code prompt" src="https://img.brightcove.com/node16450-access-code-prompt.png" /></figure>
-  <p>If an incorrect access code is entered, the viewer will receive an error. Access codes are a good way to restrict access to a site while it is under construction. Access codes do not offer any site security or authentication.</p>
-  <p>To configure an access control profile to use an access code, follow these steps:</p>
-  <ol class="bcls-tasklist">
-    <li>Select the <strong>Require Access Code </strong> option.</li>
-    <li>Enter the <strong>Access Code</strong> for the site.</li>
-    <li>Enter the <strong>Access Code Label</strong>. The <strong>Access Code Label</strong> will appear above where the user will enter their access code.
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="configure access code" src="https://img.brightcove.com/node16450-access-code1.png" /></figure>
-    </li>
-    <li>(Optional) <a href="#style">Style the access control page</a>.</li>
-    <li>Click <strong>Save</strong>.</li>
-  </ol>
-  <p>&nbsp;</p>
-</section>
-<section class="bcls-section">
-  <h2 id="style">Styling the access control page</h2>
-  <p>The access control page can be styled to more closely match the look of your overall site. Gallery provides three styling options:</p>
-  <ul>
-    <li><a href="#defaultstyle">Default</a></li>
-    <li><a href="#imageborder">Image &amp; Border</a></li>
-    <li><a href="#custom">Custom</a></li>
-  </ul>
-  <div>
-    <h3 id="defaultstyle">Default styling</h3>
-    <p>With the default styling option, a Gallery logo, the Access Code Label and an access code field will always be displayed.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="access code prompt" src="https://img.brightcove.com/node16450-access-code-prompt.png" /></figure>
-  </div>
-  <div>
-    <h3 id="imageborder">Image &amp; Border styling</h3>
-    <p>The Image &amp; Border option allows for some basic customizations to the access control page. An example can be seen below.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="image border example" src="https://img.brightcove.com/node16450-image-border-example.png" /></figure>
-    <p>To customize the image and border styling, follow these steps:</p>
-    <ol class="bcls-tasklist">
-      <li>Select <strong>Image &amp; Border</strong>.</li>
-      <li>Drag &amp; drop, browse, or add a link to the image to display on the access control page.</li>
-      <li>Enter a <strong>Clickthrough URL</strong>. The <strong>Clickthrough URL</strong> will make the image a clickable link.</li>
-      <li>Click on the color picker to select a <strong>Header Border Color</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="image border properties" src="https://img.brightcove.com/node16450-image-border-props.png" /></figure>
-      </li>
-      <li>Click <strong>Save</strong>.</li>
-    </ol>
-  </div>
-  <div>
-    <h3 id="custom">Custom styling</h3>
-    <p>The <strong>Custom</strong> styling option allows for more advanced customizations to the access control page. An example can be seen below.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="custom example" src="https://img.brightcove.com/node16450-custom-example.png" /></figure>
-    <p>To use the <strong>Custom</strong> option, follow these steps:</p>
-    <ol class="bcls-tasklist">
-      <li>Select<strong> Custom</strong>.</li>
-      <li>Enter custom HTML for the header and footer.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="custom properties" src="https://img.brightcove.com/node16450-custom-props.png" /></figure>
-      </li>
-      <li>Click <strong>Save</strong></li>
-    </ol>
-  </div>
 </section>
 </body>
 </html>
