@@ -34,31 +34,31 @@
       <li>Edit the custom domain that SSL will be enabled for.</li>
       <li>Check <strong>Use SSL</strong>.</li>
       <li>Paste in your <strong>Server Certificate</strong>. Remove any blank lines at the beginning or end of the key. Brightcove requires the certificate to be in PEM format.
-        <figure class="bcls-figure"><img alt="" src="/corp-comm/assets/images/experiences/ssl-server-cert.png" /></figure>
+        <figure class="bcls-figure"><img alt="" src="/engage/assets/images/experiences/ssl-server-cert.png" /></figure>
       </li>
       <li>Paste in your <strong>Server Private Key</strong>. Remove any blank lines at the beginning or end of the key. Brightcove requires the certificate to be in PEM format.
-        <figure class="bcls-figure"><img alt="" src="/corp-comm/assets/images/experiences/ssl-private-key.png" /></figure>
+        <figure class="bcls-figure"><img alt="" src="/engage/assets/images/experiences/ssl-private-key.png" /></figure>
       </li>
       <li>Paste in your <strong>Chain of CA Certificates</strong>. If your certificate was signed by a root CA, then only the root certificate CA needs to be pasted in. &nbsp;This should not include your own certificate. Remove any blank lines at the beginning or end of the key. Brightcove requires the certificate to be in PEM format.
-        <figure class="bcls-figure"><img alt="" src="/corp-comm/assets/images/experiences/ssl-cert-chain.png" /></figure>
+        <figure class="bcls-figure"><img alt="" src="/engage/assets/images/experiences/ssl-cert-chain.png" /></figure>
       </li>
       <li>Click<strong> Save</strong>. The site details will be displayed.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/corp-comm/assets/images/experiences/ssl-save-changes.png" /></figure>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/engage/assets/images/experiences/ssl-save-changes.png" /></figure>
       </li>
       <li>Click <strong>Save</strong>. The certificate will be validated and if there are errors, they will be displayed.</li>
     </ol>
     <p>The SSL status will display <strong>Updating Configuration</strong> while the SSL information is being updated and propagated. Click <strong>Refresh List</strong> to update the SSL status.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/corp-comm/assets/images/experiences/ssl-update-config.png" /></figure>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/engage/assets/images/experiences/ssl-update-config.png" /></figure>
     <h3>Configure the CNAME record</h3>
     <p>Once SSL has been configured, the <strong>SSL</strong> status will be <strong>Enabled</strong>. The CNAME information will be updated with a CloudFront URL. The CloudFront URL will not change unless the domain is deleted.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/corp-comm/assets/images/experiences/ssl-cname-info.png" /></figure>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/engage/assets/images/experiences/ssl-cname-info.png" /></figure>
     <p>Note that browsing directly to a CloudFront URL will return a "page not found" error (404). A <code>curl</code> command can be used to verify the domain configuration. For this example:</p>
     <pre>
 <code>curl -H "Host: video.brightcovelearning.com" https://d3mkhzp6k6x3hl.cloudfront.net</code>
 </pre>
     <p>The curl statement should return the contents of the site home page.</p>
     <p>The CNAME record for your custom domain should redirect to the CloudFront URL displayed on the Custom Domains and SSL page.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/corp-comm/assets/images/experiences/ssl-cname-godaddy.png" /></figure>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/engage/assets/images/experiences/ssl-cname-godaddy.png" /></figure>
     <aside class="bcls-aside bcls-aside--information language-editable">Note: If you are using custom headers and footers, check to make sure that all URLs are secure as well.</aside>
   </section>
   <section class="bcls-section">
@@ -68,7 +68,7 @@
       <li>Open the <strong>Projects</strong> page.</li>
       <li>Click the <strong>Settings</strong> link.</li>
       <li>In the left navigation, click the <strong>Custom Domains &amp; SSL</strong> link.</li>
-      <li>Locate the custom domain using the SSL certificate and then click the edit icon (<img alt="" src="/corp-comm/assets/images/experiences/edit-icon.png" />).</li>
+      <li>Locate the custom domain using the SSL certificate and then click the edit icon (<img alt="" src="/engage/assets/images/experiences/edit-icon.png" />).</li>
       <li>Click <strong>Upload new certificate</strong>.</li>
       <li>Paste in the new <strong>Server Certificate, Server Private Key</strong> and <strong>Chain of CA Certificates</strong>. Remove any blank lines at the beginning or end of the keys.</li>
       <li>Click <strong>Save</strong>.</li>
