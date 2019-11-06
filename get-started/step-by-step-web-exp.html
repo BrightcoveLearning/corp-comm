@@ -32,102 +32,55 @@
 <h2 id="prereq">Prerequisites</h2>
 
 <ul>
-	<li>A Video Cloud account with access to the Gallery module</li>
+	<li>A Brightcove Engage account</li>
 </ul>
 </section>
 
  <section class="bcls-section">
 <h2 id="setup">Before you get started</h2>
 
-<p>To use the sample videos provided, perform the following steps.</p>
-
+<p>This step-by-step guide will use the videos that are included with the Brightcove Engage trial account. Feel free to <a href="../docs/videos/uploading-videos.html">upload</a> and use your own videos.</p>
 <ol class="bcls-tasklist">
-	<li><a href="https://files.brightcove.com/GalleryQuickStartAssets.zip">Download</a> the sample files.</li>
-	<li>Upload the videos to your Video Cloud account.</li>
-	<li>Add a tag of '<strong class="notranslate">bird in flight</strong>' to the Chickadee video.</li>
-	<li>Create three playlists and add the videos to the playlists as follows.
-	</li>
-	<li>Add some related link URLs to a few of the videos. In a later section, we will configure the portal to display related links for videos.</li>
-	<li>Using the <strong>Players</strong> module, create a new player called <strong>Gallery Player</strong>.</li>
-	<li>Configure the player to NOT display the title and description. Publish the player.</li>
+  <li>If you are using your own videos, you should <a href="../docs/videos/creating-and-managing-playlists.html">create several playlists</a> to organize the videos.</li>
 </ol>
-</section>
+ </section>
 
  <section class="bcls-section">
-<h2 id="create">Creating a portal experience</h2>
+<h2 id="create">Creating a Web experience</h2>
 
-<p>To create a portal experience using Brightcove Gallery, you will complete the following tasks:</p>
-
+<p>To create a web experience using Brightcove Engage, you will complete the following tasks:</p>
 <ul>
-	<li><a href="#player">Configure Gallery with a default player</a></li>
-	<li><a href="#create_domain">Create a custom domain name</a></li>
-	<li><a href="#create">Create a new portal experience</a></li>
+	<li><a href="#create">Create a new Web experience</a></li>
 	<li><a href="#details">Edit the site details</a></li>
 	<li><a href="#objects">Add objects to a page template</a></li>
 	<li><a href="#preview">Preview the experience</a></li>
 	<li><a href="#addvideos">Create collections and add videos to the collections</a></li>
 	<li><a href="#style">Change the site style</a></li>
-	<li><a href="#assign_domain">Assign a custom domain</a></li>
 	<li><a href="#publish">Publish the experience</a></li>
 </ul>
 </section>
-
  <section class="bcls-section">
-<h2 id="player">Configuring Gallery with a default player</h2>
+  <h2 id="create">Creating a new Web experience</h2>
 
-<p>Brightcove Gallery can be configured with a default video player that will be used on your Gallery sites. If no default player is specified, the <strong>Brightcove Default Player</strong> will be the default. To configure Gallery with a default player, follow these steps.</p>
+<p>To create a new Web experience, follow these steps.</p>
 
 <ol class="bcls-tasklist">
-	<li>Login to <a href="https://studio.brightcove.com">Video Cloud Studio</a>.</li>
-	<li>The current Video Cloud account name will appear in the upper right corner of the page. If you have multiple accounts, click the account selector drop down and select the account you would like to create the experience in. Note that this should also be the account that has the videos you want to use as well.</li>
-	<li>Click <strong>Gallery</strong> in the navigation menu.</li>
-	<li>Click the <strong>Settings</strong> link at the top of the page.
-	<figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-settings-link.png" /></figure>
-	</li>
-	<li>Click <strong>Save</strong>.</li>
-</ol>
-</section>
-
- <section class="bcls-section">
-<h2 id="create_domain">Creating a custom domain name</h2>
-
-<p>When you create a new portal experience, Gallery will assign a random URL to it (i.e. <code>site-12345.bcvp0rtal.com</code>). Portal experiences can be assigned a Brightcove provided domain (what we will do in this topic) or you can use your own custom domain. To create a new Brightcove provided domain, follow these steps.</p>
-
-<ol class="bcls-tasklist">
-	<li>From the <strong>Settings</strong> page, click <strong>Custom Domains &amp; SSL</strong> in the left navigation.</li>
-	<li>Click <strong>Create Custom Domain</strong>.</li>
-	<li>Select either a <strong>brightcovegallery.com</strong> or <strong>gallery.video</strong> domain.</li>
-	<li>Enter a custom domain. Use your own name or company name. If the domain is not available, a message will display. Enter another name.
-	<figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-custom-domain.png" /></figure>
-	</li>
-	<li>When you have entered a valid domain, click <strong>Save</strong>.</li>
-</ol>
-
-<p class="BCL-aside">Note: The custom domain will be assigned to the portal in a later section.</p>
-</section>
-
- <section class="bcls-section">
-<h2 id="create">Creating a new portal experience</h2>
-
-<p>To create a new Gallery portal experience, follow these steps.</p>
-
-<ol class="bcls-tasklist">
-	<li>Click the <strong>Experiences </strong>link at the top of the page.</li>
-	<li>Click <strong>New Experience</strong>.</li>
-	<li>Click the <strong>Portal</strong> tab at the top of the page. A list of portal templates will be displayed. Locate the <strong>Marquee</strong> template and click <strong>Choose</strong>.
-	<figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-marquee.png" /></figure>
-
-	<p class="BCL-aside">Note: Once you select a template it can't be changed. For more information Gallery templates, see the <a href="/node/13548">Overview of Gallery Portal Templates</a> topic.</p>
-	</li>
-	<li>Enter <strong>Animal World</strong> for the <strong>Experience Title</strong>. For the <strong>Pre-Populate experience?</strong> setting, select <strong>No thanks</strong>.
-	<figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-new-project1.png" /></figure>
-	</li>
+	<li>Login to Brightcove Engage. The <strong>Projects</strong> page will appear.</li>
+	<li>Click <strong>New Experience</strong>. A list of  templates will be displayed.</li>
+	<li> Locate the <strong>Web</strong> template and click <strong>Choose</strong>.
+	  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/engage/assets/images/get-started/choose-web-template.png" /></figure>
+	  
+	  <aside class="bcls-aside bcls-aside--information language-editable">Note: Once you select a template it can't be changed. For more information on templates, see the <a href="/corp-comm/docs/experiences/overview-experience-templates.html">Overview of Experience Templates</a> topic.</aside>
+	  </li>
+	<li>Enter <strong>Sample Web Template Experience</strong> for the <strong>Experience Title</strong>. For the <strong>Pre-Populate experience?</strong> setting, select <strong>No thanks</strong>.
+	  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/engage/assets/images/get-started/new-sample-web-app.png" /></figure>
+	  </li>
 	<li>Click <strong>Create Experience</strong>.</li>
 </ol>
 
-<p>The Experience Editor will open. The Experience Editor is used to customize the experience and provides the ability to manage page layouts, add videos, choose styles and configure other settings for the portal. All of the customization settings are accessed using the left navigation menu.</p>
+<p>The Experience Editor will open. The Experience Editor is used to customize the experience and provides the ability to manage page layouts, add videos, choose styles and configure other settings. All of the customization settings are accessed using the left navigation menu.</p>
 
-<figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node13532-site-editor-nav1.png" /></figure>
+<figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/engage/assets/images/get-started/web-app-left-nav.png" /></figure>
 </section>
 
  <section class="bcls-section">
