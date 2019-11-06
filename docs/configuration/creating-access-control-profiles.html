@@ -11,7 +11,7 @@
 <section class="bcls-section">
   <p>By default, when a Brightcove Engage experience is published, the experiences are public:</p>
   <ul>
-    <li><strong>Mobile Apps</strong> - Anyone with the Access Key and can download and access the app</li>
+    <li><strong>Mobile Apps</strong> - Anyone with the Access Key and can  access the app</li>
     <li><strong>Web Applications</strong> - Anyone with the site URL will be able to access the web portal</li>
   </ul>
   <p>Access Control Profiles can be created so that users will be forced to authenticate with  valid credentials before they can access the app/site. Brightcove Engage supports the Security Assertion Markup Language 2.0 (SAML 2.0) standard for exchanging authentication and authorization data between security domains.</p>
@@ -27,6 +27,18 @@
   </ul>
   <p>Other providers using the SAML 2.0 standard will also work.</p>
   <aside class="bcls-aside bcls-aside--information language-editable">Note: Brightcove Engage requires SAML 2.0 for single sign-on authentication. SAML 1.1 is not supported.</aside>
+  <p>When configuring your SSO software, map the following  attributes:</p>
+  <ul>
+    <li>firstName maps to First Name</li>
+    <li>lastName maps to Last Name</li>
+    <li>email Maps to Email</li>
+  </ul>
+  <p>A sample mapping is shown below:</p>
+  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="profiles list" src="/engage/assets/images/configuration/ping-sso-config.png" /></figure>
+  <p>By exposing these values, the user's name and email will appear on the mobile app Profile page and will also appear as part of the video analytics inside the Brightcove Engage application.</p>
+</section>
+<section class="bcls-section">
+  <h2 id="create">Creating a new profile</h2>
   <p>Access Control Profiles are created as part of the Project settings and then  assigned to experiences.
   <p>To create an Access Control Profile, follow these steps:</p>
   <ol class="bcls-tasklist">
