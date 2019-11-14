@@ -76,7 +76,7 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/docs/configuration/creating-access-control-profiles.html</loc>
+        <loc>https://engage.support.brightcove.com/docs/experiences/creating-access-control-profiles.html</loc>
         <lastmod>2019-11-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -139,28 +139,7 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/docs/experiences/</loc>
-        <lastmod>2019-11-14</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/docs/configuration/</loc>
-        <lastmod>2019-11-14</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/get-started/</loc>
-        <lastmod>2019-11-14</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/release-notes/</loc>
+        <loc>https://engage.support.brightcove.com/support/</loc>
         <lastmod>2019-11-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -168,20 +147,6 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/docs/</loc>
-        <lastmod>2019-11-14</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/docs/analytics/</loc>
-        <lastmod>2019-11-14</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/support/</loc>
         <lastmod>2019-11-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -202,7 +167,35 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/docs/analytics/</loc>
+        <lastmod>2019-11-14</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/release-notes/</loc>
+        <lastmod>2019-11-14</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/get-started/</loc>
+        <lastmod>2019-11-14</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/</loc>
+        <lastmod>2019-11-14</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/</loc>
         <lastmod>2019-11-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -308,6 +301,13 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/docs/experiences/previewing-publishing-web-experience.html</loc>
+        <lastmod>2019-11-14</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/analytics/reviewing-video-analytics.html</loc>
         <lastmod>2019-11-14</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>

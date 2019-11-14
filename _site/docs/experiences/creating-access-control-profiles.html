@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <meta name="robots" content="noindex" />
-  <title>Configuration</title>
+  <title>Creating Access Control Profiles</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
@@ -33,9 +33,9 @@
       
       
       
-      <li class="breadcrumb-item"><a href="/docs/configuration/">Docs</a></li>
+      <li class="breadcrumb-item"><a href="/docs/experiences/">Experiences</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Configuration</li>
+      <li class="breadcrumb-item active" aria-current="page">Creating Access Control Profiles</li>
     </ol>
   </nav>
 </header>
@@ -125,6 +125,8 @@
                         
                         <li><a href="/docs/experiences/controlling-access-experience.html">Controlling Access to an Experience</a></li>
                         
+                        <li><a href="/docs/configuration/creating-access-control-profiles.html">Creating Access Control Profiles</a></li>
+                        
                         <li><a href="/docs/experiences/configuring-experience-settings.html">Configuring Experience Settings</a></li>
                         
                         <li><a href="/docs/experiences/adding-videos-experience.html">Adding Videos to an Experience</a></li>
@@ -157,18 +159,6 @@
                 
                   
                     <li class="submenu-header">
-                      <a href="/docs/configuration/">Configuration <strong>+</strong></a>
-                    </li>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/docs/configuration/creating-access-control-profiles.html">Creating Access Control Profiles</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
                       <a href="/docs/admin/">Administration <strong>+</strong></a>
                     </li>
                       <ul class="sidenav-subsubmenu" style="display:none;">
@@ -197,7 +187,7 @@
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/release-notes/2020.html">Release Notes 2020</a></li>
+                    <li><a href="/release-notes/2020.html">2020</a></li>
                   
                 
               </ul>
@@ -229,20 +219,88 @@
       </div>
   <!-- bootstrap layout -->
   
-<article class="bcls-article"> <i class="fad fa-tools fa-3x" style="color: lightseagreen;"></i>
-  <h1>Configuration</h1>
-  <summary>Learn how to configure Project settings for Mobile App and Web Experiences.</summary>
-  <section class="bcls-section">
-    <h2>Table of Contents</h2>
-    <ul>
-      <li><a href="creating-access-control-profiles.html">Creating Access Control Profiles</a></li>
-    </ul>
-  </section>
-</article>
+<article class="bcls-article">
+<h1>Creating Access Control Profiles</h1>
+<summary>In this topic you will learn how to create Access Control Profiles.</summary>
+<section class="bcls-section">
+  <p>By default, when a Brightcove Engage experience is published, the experiences are public:</p>
+  <ul>
+    <li><strong>Mobile Apps</strong> - Anyone with the Access Key and can  access the app</li>
+    <li><strong>Web Applications</strong> - Anyone with the site URL will be able to access the web portal</li>
+  </ul>
+  <p>Access Control Profiles can be created so that users will be forced to authenticate with  valid credentials before they can access the app/site. Brightcove Engage supports the Security Assertion Markup Language 2.0 (SAML 2.0) standard for exchanging authentication and authorization data between security domains.</p>
+  <p>Brightcove Engage supports most major Identity Providers, including:</p>
+  <ul>
+    <li>Ping</li>
+    <li>OneLogin</li>
+    <li>ADFS 2.0 / 3.0</li>
+    <li>Google G Suite</li>
+    <li>Shibboleth</li>
+    <li>Okta</li>
+    <li>Salesforce.com</li>
+  </ul>
+  <p>Other providers using the SAML 2.0 standard will also work.</p>
+  <aside class="bcls-aside bcls-aside--information language-editable">Note: Brightcove Engage requires SAML 2.0 for single sign-on authentication. SAML 1.1 is not supported.</aside>
+  <p>When configuring your SSO software, map the following  attributes:</p>
+  <ul>
+    <li>firstName maps to First Name</li>
+    <li>lastName maps to Last Name</li>
+    <li>email Maps to Email</li>
+  </ul>
+  <p>A sample mapping is shown below:</p>
+  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="profiles list" src="/engage/assets/images/configuration/ping-sso-config.png" /></figure>
+  <p>By exposing these values, the user's name and email will appear on the mobile app Profile page and will also appear as part of the video analytics inside the Brightcove Engage application.</p>
+</section>
+<section class="bcls-section">
+  <h2 id="create">Creating a new profile</h2>
+  <p>Access Control Profiles are created as part of the Project settings and then  assigned to experiences.
+  <p>To create an Access Control Profile, follow these steps:</p>
+  <ol class="bcls-tasklist">
+    <li>Login to Brightcove Engage.</li>
+    <li>From the <strong>Projects</strong> page, click <strong>Settings</strong>. The Access Control Profiles page will display with a list of profiles (if any) that have been created.
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="profiles list" src="/engage/assets/images/configuration/access-control-profile-list.png" /></figure>
+    </li>
+    <li>Click <strong>Create Profile</strong>.</li>
+    <li>Give the profile a <strong>Name</strong>.</li>
+    <li><strong>(Optional)</strong> Configure a <strong>Session Timeout</strong> to specify the amount of time a user's session will last. A few notes:
+      <ul>
+        <li>Your SSO provider must be set to either force re-authentication or to have a session timeout of less than this timeout. If it's not, we'll redirect to your SSO provider after our timeout and they will immediately issue a response that the user is logged in.</li>
+      </ul>
+    </li>
+    <li>Select the <strong>SSO</strong> option. The SSO configuration options will display.</li>
+    <li>If you have an export file of your SAML 2.0 metadata, click <strong>Select File</strong> and then browse and select the metadata file. This will prefill the <strong>SAML 2.0 Endpoint</strong> and the <strong>X.509 Certificate</strong> fields.</li>
+    <li>Enter a value for the <strong>SAML 2.0 Endpoint (HTTP)</strong>. This value should be available from your SAML provider.</li>
+    <li>Enter a value for the <strong> X.509 Certificate</strong>. This value should be available from your SAML provider.</li>
+    <li>(Optional) Enter the <strong>SAML Issuer / Entity ID Override</strong>. Enter a value here to optionally override the SAML issuer.</li>
+    <li>(Optional) Enter the<strong> ACS URL Override</strong>. Enter a value here to optionally override the ACS URL.</li>
+    <li>(Optional) Enter the <strong>SAML AuthnContext Override</strong>. Enter a value here to optionally override the SAML AuthnContext.</li>
+    <li>(Optional) Enter any SAML attributes for that you want passed to your external JavaScript.</li>
+    <li>(Optional) Check <strong>Expose all attributes</strong> to expose all of the SAML attributes for use in external JavaScript.
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="profiles list" src="/engage/assets/images/configuration/sso-configuration.png" /></figure>
+    </li>
+    <li>Click <strong>Save</strong>.</li>
+    <li>Verify the profile you created appears in the list of Access Control Profiles.
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="profiles list" src="/engage/assets/images/configuration/new-profile-in-list.png" /></figure>
+    </li>
+  </ol>
+  <p>To edit or delete an Access Control Profile, click the edit (<img class="bcls-image--no-border" alt="edit icon" src="/engage/assets/images/configuration/edit-icon.png" />) or delete (<img alt="delete icon" src="/engage/assets/images/configuration/delete-icon.png" />) icon associated with the profile. Once Access Control Profiles have been created, they can be assigned to a site as part of the site properties. For information, see <a href="/engage/docs/experiences/controlling-access-experience.html">Controlling Access to an Experience</a>.</p>
+</section>
+<section class="bcls-section">
+  <h2 id="sso">Configuring the ACS URL</h2>
+  <p>Your SSO provider will require an Assertion Consumer Service URL (ACS URL). The ACS URL is listed in the SSO section of the Access Control Profiles table.</p>
+  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="acs url" src="/engage/assets/images/configuration/acs-url.png" /></figure>
+  <p>The ACS URL defaults to <code>https://auth.bcvp0rtal.com/login/callback</code>. You can also override the ACS URL by providing your own URL. Both of these options can be used for configuring stricter SSO providers.</p>
+  <aside class="bcls-aside bcls-aside--information language-editable">Note: When using an IDP-initiated SSO workflow, the ACS URL specified in your SSO software should point to a Gallery site which is configured with that access control profile. In this case, the <code>https://auth.bcvp0rtal.com/login/callback</code> URL should not be used.</aside>
+</section>
 
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
       
     </div>
   </div>
@@ -327,6 +385,8 @@
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
   
 </body>
 

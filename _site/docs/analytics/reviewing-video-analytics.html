@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <meta name="robots" content="noindex" />
-  <title>Creating Access Control Profiles</title>
+  <title>Reviewing Video Analytics</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
@@ -32,10 +32,12 @@
       <li class="breadcrumb-item"><a href="/">Home</a></li>
       
       
+      <li class="breadcrumb-item"><a href="/docs/">Docs</a></li>
       
-      <li class="breadcrumb-item"><a href="/docs/configuration/">Configuration</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Creating Access Control Profiles</li>
+      <li class="breadcrumb-item"><a href="/docs/analytics/">Analytics</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Reviewing Video Analytics</li>
     </ol>
   </nav>
 </header>
@@ -125,6 +127,8 @@
                         
                         <li><a href="/docs/experiences/controlling-access-experience.html">Controlling Access to an Experience</a></li>
                         
+                        <li><a href="/docs/configuration/creating-access-control-profiles.html">Creating Access Control Profiles</a></li>
+                        
                         <li><a href="/docs/experiences/configuring-experience-settings.html">Configuring Experience Settings</a></li>
                         
                         <li><a href="/docs/experiences/adding-videos-experience.html">Adding Videos to an Experience</a></li>
@@ -157,18 +161,6 @@
                 
                   
                     <li class="submenu-header">
-                      <a href="/docs/configuration/">Configuration <strong>+</strong></a>
-                    </li>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/docs/configuration/creating-access-control-profiles.html">Creating Access Control Profiles</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
                       <a href="/docs/admin/">Administration <strong>+</strong></a>
                     </li>
                       <ul class="sidenav-subsubmenu" style="display:none;">
@@ -197,7 +189,7 @@
               <ul class="sidenav-submenu" style="display:none;">
                 
                   
-                    <li><a href="/release-notes/2020.html">Release Notes 2020</a></li>
+                    <li><a href="/release-notes/2020.html">2020</a></li>
                   
                 
               </ul>
@@ -230,78 +222,60 @@
   <!-- bootstrap layout -->
   
 <article class="bcls-article">
-<h1>Creating Access Control Profiles</h1>
-<summary>In this topic you will learn how to create Access Control Profiles.</summary>
-<section class="bcls-section">
-  <p>By default, when a Brightcove Engage experience is published, the experiences are public:</p>
-  <ul>
-    <li><strong>Mobile Apps</strong> - Anyone with the Access Key and can  access the app</li>
-    <li><strong>Web Applications</strong> - Anyone with the site URL will be able to access the web portal</li>
-  </ul>
-  <p>Access Control Profiles can be created so that users will be forced to authenticate with  valid credentials before they can access the app/site. Brightcove Engage supports the Security Assertion Markup Language 2.0 (SAML 2.0) standard for exchanging authentication and authorization data between security domains.</p>
-  <p>Brightcove Engage supports most major Identity Providers, including:</p>
-  <ul>
-    <li>Ping</li>
-    <li>OneLogin</li>
-    <li>ADFS 2.0 / 3.0</li>
-    <li>Google G Suite</li>
-    <li>Shibboleth</li>
-    <li>Okta</li>
-    <li>Salesforce.com</li>
-  </ul>
-  <p>Other providers using the SAML 2.0 standard will also work.</p>
-  <aside class="bcls-aside bcls-aside--information language-editable">Note: Brightcove Engage requires SAML 2.0 for single sign-on authentication. SAML 1.1 is not supported.</aside>
-  <p>When configuring your SSO software, map the following  attributes:</p>
-  <ul>
-    <li>firstName maps to First Name</li>
-    <li>lastName maps to Last Name</li>
-    <li>email Maps to Email</li>
-  </ul>
-  <p>A sample mapping is shown below:</p>
-  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="profiles list" src="/engage/assets/images/configuration/ping-sso-config.png" /></figure>
-  <p>By exposing these values, the user's name and email will appear on the mobile app Profile page and will also appear as part of the video analytics inside the Brightcove Engage application.</p>
-</section>
-<section class="bcls-section">
-  <h2 id="create">Creating a new profile</h2>
-  <p>Access Control Profiles are created as part of the Project settings and then  assigned to experiences.
-  <p>To create an Access Control Profile, follow these steps:</p>
-  <ol class="bcls-tasklist">
-    <li>Login to Brightcove Engage.</li>
-    <li>From the <strong>Projects</strong> page, click <strong>Settings</strong>. The Access Control Profiles page will display with a list of profiles (if any) that have been created.
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="profiles list" src="/engage/assets/images/configuration/access-control-profile-list.png" /></figure>
-    </li>
-    <li>Click <strong>Create Profile</strong>.</li>
-    <li>Give the profile a <strong>Name</strong>.</li>
-    <li><strong>(Optional)</strong> Configure a <strong>Session Timeout</strong> to specify the amount of time a user's session will last. A few notes:
+  <h1>Reviewing Video Analytics</h1>
+  <section class="bcls-section">
+    <p>Regardless of your specific goals for online video, understanding your audience is a key to developing a successful video strategy. The better you understand your viewers, the easier it is to create content that will engage them in formats they can easily consume. The Analytics page provides  analytics about how many views your videos have, how much content your viewers are watching and even when they stop watching videos.</p>
+    <p>To view  Analytics in Brightcove Engage, click <strong>Analytics</strong> in the navigation header.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Analytics module Export link" src="/assets/images/analytics/analytics-home.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="timespan" class="BCL_conceptTitle">Selecting a time span</h2>
+    <p>To specify the time period for analytics, click on a quick date or use the calendar control. Note that when a single day is selected, the graphs will display by hour.</p>
+    <h3>Using a quick date</h3>
+    <p>A series of quick dates are at the top of the page. The following quick dates are available:</p>
+    <ul>
+      <li>Today</li>
+      <li>Last 7 days</li>
+      <li>Last 30 days</li>
+      <li>This month - The calendar month to date - for example, if today is March 17, this report will display March 1 - March 17</li>
+      <li>Last month - The previous calendar month - for example, if today is February 14, this report will display January 1 - January 31.</li>
+    </ul>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="quick dates" src="/assets/images/analytics/quick-dates.png" /></figure>
+    <h3>Using the calendar control</h3>
+    <p>You can also select a start and end dates by clicking on the calendar control.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="date selector" src="/assets/images/analytics/date-picker.png" /></figure>
+    <h3>Reporting time zone</h3>
+    <p>Data on the Analytics page is shown using the account's reporting time zone. The time zone is displayed below the calendar control.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="time zone" src="/assets/images/analytics/timezone.png" /></figure>
+    <p>The reporting time zone is used to calculate day boundaries for reporting data. Changing the reporting time zone setting only affects data going forward, and changes are not applied retroactively. If you change this setting, you may see a flat spot or a spike in your data when looking at day boundaries where the change was applied. Updates to this setting may not take effect immediately, and analytics data may continue to refer to the old setting until the system processes the changes.</p>
+    <p>The reporting time zone can be configured as part of the account settings. For information on changing the reporting time zone, see <a href="/docs/admin/managing_account_settings.html#account_settings">Managing Account Settings</a>.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: The Analytics reports do include analytics for videos that have been deleted from your account.</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="video_analytics">Viewing analytics for a video</h2>
+    <p>To view detailed analytics for a specific video, click on a video name.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/video-analytics.png" /></figure>
+      <p>The following details will be displayed:</p>
       <ul>
-        <li>Your SSO provider must be set to either force re-authentication or to have a session timeout of less than this timeout. If it's not, we'll redirect to your SSO provider after our timeout and they will immediately issue a response that the user is logged in.</li>
+        <li><strong>Published Date</strong> - The date the video was uploaded</li>
+        <li><strong>Video Views</strong> - The number of times a video started playing</li>
+        <li><strong>Play Rate</strong> - The percentage of videos that were loaded that were actually played (video views / video loads)</li>
+        <li><strong>Average Minutes Watched</strong> - Total Time Viewed / Video Starts</li>
+        <li><strong>Video Benchmark Score</strong> - Value calculated from the video Play Rate and Engagement Rate (<a href="/docs/analytics/how-vbs-calculated.html">how is VBS calculated?</a>)</li>
       </ul>
-    </li>
-    <li>Select the <strong>SSO</strong> option. The SSO configuration options will display.</li>
-    <li>If you have an export file of your SAML 2.0 metadata, click <strong>Select File</strong> and then browse and select the metadata file. This will prefill the <strong>SAML 2.0 Endpoint</strong> and the <strong>X.509 Certificate</strong> fields.</li>
-    <li>Enter a value for the <strong>SAML 2.0 Endpoint (HTTP)</strong>. This value should be available from your SAML provider.</li>
-    <li>Enter a value for the <strong> X.509 Certificate</strong>. This value should be available from your SAML provider.</li>
-    <li>(Optional) Enter the <strong>SAML Issuer / Entity ID Override</strong>. Enter a value here to optionally override the SAML issuer.</li>
-    <li>(Optional) Enter the<strong> ACS URL Override</strong>. Enter a value here to optionally override the ACS URL.</li>
-    <li>(Optional) Enter the <strong>SAML AuthnContext Override</strong>. Enter a value here to optionally override the SAML AuthnContext.</li>
-    <li>(Optional) Enter any SAML attributes for that you want passed to your external JavaScript.</li>
-    <li>(Optional) Check <strong>Expose all attributes</strong> to expose all of the SAML attributes for use in external JavaScript.
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="profiles list" src="/engage/assets/images/configuration/sso-configuration.png" /></figure>
-    </li>
-    <li>Click <strong>Save</strong>.</li>
-    <li>Verify the profile you created appears in the list of Access Control Profiles.
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="profiles list" src="/engage/assets/images/configuration/new-profile-in-list.png" /></figure>
-    </li>
-  </ol>
-  <p>To edit or delete an Access Control Profile, click the edit (<img class="bcls-image--no-border" alt="edit icon" src="/engage/assets/images/configuration/edit-icon.png" />) or delete (<img alt="delete icon" src="/engage/assets/images/configuration/delete-icon.png" />) icon associated with the profile. Once Access Control Profiles have been created, they can be assigned to a site as part of the site properties. For information, see <a href="/engage/docs/experiences/controlling-access-experience.html">Controlling Access to an Experience</a>.</p>
-</section>
-<section class="bcls-section">
-  <h2 id="sso">Configuring the ACS URL</h2>
-  <p>Your SSO provider will require an Assertion Consumer Service URL (ACS URL). The ACS URL is listed in the SSO section of the Access Control Profiles table.</p>
-  <figure class="bcls-figure"><img class="bcls-image--no-border" alt="acs url" src="/engage/assets/images/configuration/acs-url.png" /></figure>
-  <p>The ACS URL defaults to <code>https://auth.bcvp0rtal.com/login/callback</code>. You can also override the ACS URL by providing your own URL. Both of these options can be used for configuring stricter SSO providers.</p>
-  <aside class="bcls-aside bcls-aside--information language-editable">Note: When using an IDP-initiated SSO workflow, the ACS URL specified in your SSO software should point to a Gallery site which is configured with that access control profile. In this case, the <code>https://auth.bcvp0rtal.com/login/callback</code> URL should not be used.</aside>
-</section>
+
+  </section>
+  <section class="bcls-section">
+    <h2 id="export">Exporting analytics data</h2>
+    <p>To export analytics data, follow these steps.</p>
+    <ol class="bcls-tasklist">
+      <li>Click on a quick date or use the calendar control to select a date range.</li>
+      <li>Click the appropriate link to export the data as a <strong>CSV</strong> or <strong>XLSX</strong> file.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/analytics/export-buttons.png" /></figure>
+      </li>
+    </ol>
+  </section>
+</article>
 
 <!-- complete bootstrap layout -->
     </div>
