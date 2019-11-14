@@ -56,6 +56,8 @@
           url: /docs/experiences/creating-and-managing-experiences.html
         - name: Controlling Access to an Experience
           url: /docs/experiences/controlling-access-experience.html
+        - name: Creating Access Control Profiles
+          url: /docs/configuration/creating-access-control-profiles.html
         - name: Configuring Experience Settings
           url: /docs/experiences/configuring-experience-settings.html
         - name: Adding Videos to an Experience
@@ -80,11 +82,6 @@
           url: /docs/experiences/onfiguring-cta-web-experience.html
     - name: Analytics
       url: /docs/analytics/
-    - name: Configuration
-      url: /docs/configuration/
-      docs:
-      - name: Creating Access Control Profiles
-        url: /docs/configuration/creating-access-control-profiles.html
     - name: Administration
       url: /docs/admin/
       docs:
