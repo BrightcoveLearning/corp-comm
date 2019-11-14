@@ -21,34 +21,70 @@
           url: /docs/videos/managing-videos.html
         - name: Editing Video Properties
           url: /docs/videos/editing-video-properties.html
+        - name: Editing Video Properties with Quick Edit
+          url: /docs/videos/editing-video-properties-using-quick-edit.html
         - name: Capturing Poster and Thumbnail Images
           url: /docs/videos/capturing-poster-and-thumbnail-images.html
         - name: Uploading Poster and Thumbnail Images
           url: /docs/videos/uploading-poster-and-thumbnail-images.html
+        - name: Creating and Managing Playlists
+          url: /docs/videos/creating-and-managing-playlists.html
+        - name: Setting Required Fields for Videos
+          url: /docs/videos/setting-required-fields-videos.html
         - name: Search for Videos
           url: /docs/videos/how-to-search-for-videos.html
-        - name: Publishing Videos
-          url: /docs/videos/publishing-videos.html
-        - name: Publishing Videos
+        - name: Working with Shared Videos
           url: /docs/videos/working-with-shared-videos.html
         - name: Adding Text Tracks
           url: /docs/videos/adding-text-tracks-to-a-video.html
-    - name: Dashboard
-      url: /docs/dashboard/
+        - name: Configuring Video Availability
+          url: /docs/videos/publishing-videos.html
+        - name: Exporting Video Data
+          url: /docs/videos/exporting-video-data.html
+    - name: Experiences
+      url: /docs/experiences/
       docs:
-        - name: Dashboard Overview
-          url: /docs/dashboard/dashboard-overview.html
-        - name: Reviewing the Basic Dashboard
-          url: /docs/dashboard/reviewing-basic-dashboard.html
-        - name: Reviewing the Advanced Dashboard
-          url: /docs/dashboard/reviewing-adv-dashboard.html
+        - name: Overview of Experience Templates
+          url: /docs/experiences/overview-experience-templates.html
+        - name: Managing Projects
+          url: /docs/experiences/managing-projects.html
+        - name: Managing Collections
+          url: /docs/experiences/managing-collections.html
+        - name: Editing Experience Details
+          url: /docs/experiences/editing-experience-details.html
+        - name: Creating and Managing Experiences
+          url: /docs/experiences/creating-and-managing-experiences.html
+        - name: Controlling Access to an Experience
+          url: /docs/experiences/controlling-access-experience.html
+        - name: Configuring Experience Settings
+          url: /docs/experiences/configuring-experience-settings.html
+        - name: Adding Videos to an Experience
+          url: /docs/experiences/adding-videos-experience.html
+        - name: Using the Experience Editor to Customize Mobile App Experiences
+          url: /docs/experiences/using-experience-editor-customize-mobile-app-experience.html
+        - name: Using the Experience Editor to Customize Web Experiences
+          url: /docs/experiences/using-experience-editor-customize-web-experience.html
+        - name: Styling Mobile App Experiences
+          url: /docs/experiences/styling-mobile-app-experiences.html
+        - name: Styling Web Experiences
+          url: /docs/experiences/styling-web-experiences.html
+        - name: Previewing and Publishing Mobile App Experiences
+          url: /docs/experiences/previewing-publishing-mobile-app-experience.html
+        - name: Previewing and Publishing Web Experiences
+          url: /docs/experiences/previewing-publishing-web-experience.html
+        - name: Adding a Logo to Mobile App Experience Pages
+          url: /docs/experiences/adding-logo-mobile-app-experience-pages.html
+        - name: Customizing the Content of Web Experience Pages
+          url: /docs/experiences/customizing-content-web-experience-pages.html
+        - name: Configuring Calls to Action on a Web Experience
+          url: /docs/experiences/onfiguring-cta-web-experience.html
     - name: Analytics
       url: /docs/analytics/
+    - name: Configuration
+      url: /docs/configuration/
       docs:
-        - name: Reviewing Video Analytics
-          url: /docs/analytics/reviewing-video-analytics.html
-        - name: How Video Benchmark Score is Calculated
-          url: /docs/analytics/how-vbs-calculated.html
+      - name: Creating Access Control Profiles
+        url: /docs/configuration/creating-access-control-profiles.html
     - name: Administration
       url: /docs/admin/
       docs:
@@ -64,27 +100,11 @@
         url: /docs/admin/managing_profile_information.html
       - name: Viewing Billing Information
         url: /docs/admin/viewing-billing-information.html
-      - name: Configuring Google Analytics Event Tracking
-        url: /docs/admin/configuring-google-analytics-event-tracking.html
-      - name: Reviewing Player Event Data in Google Analytics
-        url: /docs/admin/reviewing-player-event-data-in-google-analytics.html
-      - name: Configuring Adobe Analytics Event Tracking
-        url: /docs/admin/configuring-adobe-analytics-event-tracking.html
-      - name: Configuring MAP Connections
-        url: /docs/admin/configuring-map-connections.html
-      - name: Connecting to HubSpot
-        url: /docs/admin/connecting-to-hubspot.html
-      - name: Connecting to Marketo
-        url: /docs/admin/connecting-to-marketo.html
-      - name: Connecting to Oracle Eloqua
-        url: /docs/admin/connecting-to-oracle-eloqua.html
-- section: General
-  url: /general/
+- section: Release Notes
+  url: /release-notes/
   docs:
-    - name: Product Updates
-      url: /references/product-updates.html
-    - name: Using the Heads-Up Display
-      url: /docs/hud/using-hud.html
+    - name: Release Notes 2020
+      url: /release-notes/2020.html
 - section: Support
   url: /support/
   docs:
