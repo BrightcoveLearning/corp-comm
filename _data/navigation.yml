@@ -90,6 +90,9 @@
           url: /docs/experiences/onfiguring-cta-web-experience.html
     - name: Analytics
       url: /docs/analytics/
+      docs:
+    - name: Reviewing Video Analytics
+      url: /reviewing-video-analytics.html
     - name: Administration
       url: /docs/admin/
       docs:
