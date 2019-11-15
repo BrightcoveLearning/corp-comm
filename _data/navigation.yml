@@ -70,9 +70,9 @@
           url: /docs/experiences/configuring-experience-settings.html
         - name: Adding Videos to an Experience
           url: /docs/experiences/adding-videos-experience.html
-        - name: Using the Experience Editor to Customize Mobile App Experiences
+        - name: Customizing Mobile App Experiences
           url: /docs/experiences/using-experience-editor-customize-mobile-app-experience.html
-        - name: Using the Experience Editor to Customize Web Experiences
+        - name: Customizing Web Experiences
           url: /docs/experiences/using-experience-editor-customize-web-experience.html
         - name: Styling Mobile App Experiences
           url: /docs/experiences/styling-mobile-app-experiences.html
