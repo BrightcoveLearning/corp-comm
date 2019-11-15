@@ -89,9 +89,6 @@
         - name: Configuring Calls to Action on a Web Experience
           url: /docs/experiences/onfiguring-cta-web-experience.html
     - name: Reviewing Analytics
-      url: /docs/analytics/
-      docs:
-    - name: Reviewing Video Analytics
       url: /reviewing-video-analytics.html
     - name: Account Administration
       url: /docs/admin/
