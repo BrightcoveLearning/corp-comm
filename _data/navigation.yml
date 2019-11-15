@@ -20,7 +20,7 @@
 - section: Docs
   url: /docs/
   docs:
-    - name: Videos
+    - name: Managing Videos
       url: /docs/videos/
       docs:
         - name: Uploading Videos
@@ -49,7 +49,7 @@
           url: /docs/videos/publishing-videos.html
         - name: Exporting Video Data
           url: /docs/videos/exporting-video-data.html
-    - name: Experiences
+    - name: Creating Experiences
       url: /docs/experiences/
       docs:
         - name: Overview of Experience Templates
@@ -88,12 +88,12 @@
           url: /docs/experiences/customizing-content-web-experience-pages.html
         - name: Configuring Calls to Action on a Web Experience
           url: /docs/experiences/onfiguring-cta-web-experience.html
-    - name: Analytics
+    - name: Reviewing Analytics
       url: /docs/analytics/
       docs:
     - name: Reviewing Video Analytics
       url: /reviewing-video-analytics.html
-    - name: Administration
+    - name: Account Administration
       url: /docs/admin/
       docs:
       - name: Managing Users
