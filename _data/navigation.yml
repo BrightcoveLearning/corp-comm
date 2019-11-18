@@ -87,7 +87,10 @@
         - name: Customizing the Content of Web Experience Pages
           url: /docs/experiences/customizing-content-web-experience-pages.html
     - name: Reviewing Analytics
-      url: /reviewing-video-analytics.html
+      url: /docs/analytics/
+      docs:
+         - name: Reviewing Video Analytics
+         url: /reviewing-video-analytics.html
     - name: Account Administration
       url: /docs/admin/
       docs:
