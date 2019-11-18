@@ -89,8 +89,8 @@
     - name: Reviewing Analytics
       url: /docs/analytics/
       docs:
-         - name: Reviewing Video Analytics
-         url: /reviewing-video-analytics.html
+      - name: Reviewing Video Analytics
+        url: /reviewing-video-analytics.html
     - name: Account Administration
       url: /docs/admin/
       docs:
