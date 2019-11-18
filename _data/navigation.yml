@@ -99,6 +99,8 @@
         url: /docs/admin/managing_account_information.html
       - name: Managing Account Settings
         url: /docs/admin/managing_account_settings.html
+      - name: Managing Video Fields
+        url: /docs/admin/managing_video-fields.html
       - name: Managing Media Sharing Settings
         url: /docs/admin/managing-media-sharing-settings.html
       - name: Managing Profile Information
