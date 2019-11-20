@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <meta name="robots" content="noindex" />
-  <title>Documentation</title>
+  <title>Brightcove Engage Documentation</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
@@ -29,12 +29,10 @@
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb arr-right">
       
-      <li class="breadcrumb-item"><a href="/">Home</a></li>
       
       
       
-      
-      <li class="breadcrumb-item active" aria-current="page">Documentation</li>
+      <li class="breadcrumb-item active" aria-current="page">Brightcove Engage Documentation</li>
     </ol>
   </nav>
 </header>
@@ -243,49 +241,40 @@
   <!-- bootstrap layout -->
   
 <article class="bcls-article">
-  <h1>Documentation</h1>
-  <summary></summary>
-    <section onclick="window.location.pathname = '/docs/videos/';" class="bcls-card"> <i class="fad fa-film fa-3x" style="color: mediumblue;"></i>
-    <h3 id="videos"><a href="/videos/index.html">Managing Videos</a></h3>
-    <p>Learn how to upload and manage videos.</p>
-        <ul>
-      <li><a href="/docs/videos/uploading-videos.html">Uploading Videos</a></li>
-      <li><a href="/docs/videos/managing-videos.html">Managing Videos</a></li>
-      <li><a href="/docs/videos/creating-and-managing-playlists.html">Creating Playlists</a></li>
-      <li><a href="/docs/videos/index.html">View All...</a></li>
-    </ul>
-  </section>
-    <section onclick="window.location.pathname = '/docs/experiences/';" class="bcls-card"> <i class="fad fa-phone-laptop fa-3x" style="color: darkorange;"></i>
-    <h3 id="experiences"><a href="/experiences/index.html">Creating Experiences</a></h3>
-    <p>Learn how to create Mobile App and Web experiences.</p>
-        <ul>
-      <li><a href="/docs/experiences/creating-and-managing-experiences.html">Creating and Managing Experiences</a></li>
-      <li><a href="/docs/experiences/using-experience-editor-customize-mobile-app-experience.html">Customizing Mobile Apps</a></li>
-      <li><a href="/docs/experiences/using-experience-editor-customize-web-experience.html">Customizing Web Applications</a></li>
-      <li><a href="/docs/experiences/index.html">View All...</a></li>
-    </ul>
-  </section>
-    <section onclick="window.location.pathname = '/docs/analytics/';" class="bcls-card"> <i class="fad fa-analytics  fa-3x" style="color: dodgerblue;"></i>
-    <h3 id="analytics"><a href="/analytics/index.html">Reviewing Analytics</a></h3>
-    <p>Learn how to view video analytics to see how your videos are performing.</p>
-    <ul>
-      <li><a href="analytics/reviewing-video-analytics.html">Reviewing Video Analytics</a></li>
-    </ul>
-  </section>
-  <section onclick="window.location.pathname = '/docs/admin/';" class="bcls-card"> <i class="fad fa-user-cog fa-3x" style="color: crimson;"></i>
-    <h3 id="admin"><a href="/admin/index.html">Account Administration</a></h3>
-    <p>Learn how to add users to your account and configure other account settings.</p>
+  <h1>Brightcove Engage Documentation</h1>
+      <p>Brightcove Engage makes it easy to create and publish  videos  experiences so viewers can consume your content whereever they may be. Two types of experiences can be created:</p>
       <ul>
-      <li><a href="/docs/admin/managing-users.html">Managing Users</a></li>
-      <li><a href="/docs/admin/viewing-billing-information.html">Billing Information</a></li>
-      <li><a href="/docs/admin/index.html">View all...</a></li>
-    </ul>
-  </section>
+        <li><strong>Mobile App</strong> - Create a device  application so your videos can be viewed inside of a native iOS or Android application (<a href="get-started/step-by-step-mobile-app.html">learn how...</a>)</li>
+        <li><strong>Web Application</strong> - Create a video website so your videos can be viewed at a specific URL on desktop and mobile browsers (<a href="get-started/step-by-step-web-exp.html">learn how...</a>)</li>
+      </ul>
+      <p>Sign up for a free trial account here.</p>
+  <section onclick="window.location.pathname = '/get-started/index.html';" class="bcls-card"> 
+  <i class="fad fa-map-pin fa-3x" style="color: tomato;"></i>
+  <h3><a href="get-started/index.html">Get Started</a> </h3>
+        </section>
+    <section onclick="window.location.pathname = '/docs/index.html';" class="bcls-card"> 
+  <i class="fad fa-file fa-3x" style="color: teal;"></i>
+  <h3><a href="docs/index.html">Documentation</a> </h3>
+        </section>
+    <section onclick="window.location.pathname = '/release-notes/index.html';" class="bcls-card"> 
+  <i class="fad fa-lightbulb fa-3x" style="color: dodgerblue;"></i>
+  <h3><a href="release-notes/index.html">Release Notes</a></h3>
+        </section>
+    <section onclick="window.location.pathname = '/support/index.html';" class="bcls-card"> 
+  <i class="fad fa-question-circle fa-3x" style="color: indigo;"></i>
+  <h3><a href="support/index.html">Technical Support</a></h3>
+        </section>
 </article>
+
 
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav">
+        <h6 class="toc">Page Contents</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
       
     </div>
   </div>
@@ -370,6 +359,8 @@
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/prism.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/site.js"></script>
   <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/tabs.js"></script>
+  
+  <script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/toc.js"></script>
   
 </body>
 
