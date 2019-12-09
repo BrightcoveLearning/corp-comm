@@ -1,6 +1,6 @@
 - section: Home
   url: /index.html
-- section: Get Started
+- section: Getting Started
   url: /get-started/
   docs:
     - name: Get Started with your Brightcove Engage Trial
