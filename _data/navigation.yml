@@ -17,7 +17,7 @@
       url: /get-started/step-by-step-mobile-app.html
     - name: Step-by-Step Creating and Publishing a Web Experience
       url: /get-started/step-by-step-web-exp.html
-- section: Docs
+- section: Documentation
   url: /docs/
   docs:
     - name: Managing Videos
@@ -91,7 +91,7 @@
       docs:
       - name: Reviewing Video Analytics
         url: /docs/analytics/reviewing-video-analytics.html
-    - name: Account Administration
+    - name: Administering Accounts
       url: /docs/admin/
       docs:
       - name: Managing Users
