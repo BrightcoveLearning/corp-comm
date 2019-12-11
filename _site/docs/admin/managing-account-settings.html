@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <meta name="robots" content="noindex" />
-  <title>Managing Profile Information</title>
+  <title>Managing Account Settings</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/styles.css">
   <link rel="stylesheet" href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/prism.css">
@@ -38,7 +38,7 @@
       
       <li class="breadcrumb-item"><a href="/docs/admin/">Administering Accounts</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Managing Profile Information</li>
+      <li class="breadcrumb-item active" aria-current="page">Managing Account Settings</li>
     </ol>
   </nav>
 </header>
@@ -109,15 +109,13 @@
                         
                         <li><a href="/docs/videos/creating-and-managing-playlists.html">Creating and Managing Playlists</a></li>
                         
-                        <li><a href="/docs/videos/setting-required-fields-videos.html">Setting Required Fields for Videos</a></li>
-                        
                         <li><a href="/docs/videos/how-to-search-for-videos.html">Search for Videos</a></li>
                         
                         <li><a href="/docs/videos/working-with-shared-videos.html">Working with Shared Videos</a></li>
                         
                         <li><a href="/docs/videos/adding-text-tracks-to-a-video.html">Adding Text Tracks</a></li>
                         
-                        <li><a href="/docs/videos/publishing-videos.html">Configuring Video Availability</a></li>
+                        <li><a href="/docs/videos/configuring-video-availability.html">Configuring Video Availability</a></li>
                         
                         <li><a href="/docs/videos/exporting-video-data.html">Exporting Video Data</a></li>
                         
@@ -142,7 +140,7 @@
                         
                         <li><a href="/docs/experiences/controlling-access-experience.html">Controlling Access to an Experience</a></li>
                         
-                        <li><a href="/docs/configuration/creating-access-control-profiles.html">Creating Access Control Profiles</a></li>
+                        <li><a href="/docs/experiences/creating-access-control-profiles.html">Creating Access Control Profiles</a></li>
                         
                         <li><a href="/docs/experiences/configuring-experience-settings.html">Configuring Experience Settings</a></li>
                         
@@ -160,7 +158,7 @@
                         
                         <li><a href="/docs/experiences/previewing-publishing-web-experience.html">Previewing and Publishing Web Experiences</a></li>
                         
-                        <li><a href="/docs/experiences/adding-logo-mobile-app-experience-pages.html">Adding a Logo to Mobile App Experience Pages</a></li>
+                        <li><a href="/docs/experiences/adding-logo-mobile-app-experience.html">Adding a Logo to Mobile App Experience Pages</a></li>
                         
                         <li><a href="/docs/experiences/customizing-content-web-experience-pages.html">Customizing the Content of Web Experience Pages</a></li>
                         
@@ -186,15 +184,15 @@
                         
                         <li><a href="/docs/admin/managing-users.html">Managing Users</a></li>
                         
-                        <li><a href="/docs/admin/managing_account_information.html">Managing Account Information</a></li>
+                        <li><a href="/docs/admin/managing-account-information.html">Managing Account Information</a></li>
                         
-                        <li><a href="/docs/admin/managing_account_settings.html">Managing Account Settings</a></li>
+                        <li><a href="/docs/admin/managing-account-settings.html">Managing Account Settings</a></li>
                         
-                        <li><a href="/docs/admin/managing_video-fields.html">Managing Video Fields</a></li>
+                        <li><a href="/docs/admin/managing-video-fields.html">Managing Video Fields</a></li>
                         
                         <li><a href="/docs/admin/managing-media-sharing-settings.html">Managing Media Sharing Settings</a></li>
                         
-                        <li><a href="/docs/admin/managing_profile_information.html">Managing Profile Information</a></li>
+                        <li><a href="/docs/admin/managing-profile-information.html">Managing Profile Information</a></li>
                         
                         <li><a href="/docs/admin/viewing-billing-information.html">Viewing Billing Information</a></li>
                         
@@ -243,39 +241,46 @@
   <!-- bootstrap layout -->
 
 <article class="bcls-article">
-  <h1>Managing Profile Information</h1>
-  <summary>In this topic you will learn how to view and edit your profile information.</summary>
+  <h1>Managing Account Settings</h1>
+  <summary>In this topic you will learn how to manage account settings.</summary>
   <section class="bcls-section">
-    <p>Application users can use the Profile Information page to view and change their own personal account information.</p>
-    <p>To access the Profile Information page:</p>
-    <ol class="bcls-tasklist-restart" style="--s:1">
-      <li>Login to Brightcove Engage&trade;.</li>
-      <li>In the right side of the navigation header, click the account selector and then the <strong>My Profile</strong> link.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="Profile information link" src="/assets/images/admin/my-profile.png" /></figure>
-      </li>
-    </ol>
+    <p>To access the Brightcove Engage&trade; account settings, click the gear icon (<img class="bcls-image--no-border" alt="" src="/assets/images/admin/gear-icon.png" />) in the navigation header.</p>
+    <aside class="bcls-aside bcls-aside--information language-editable">Note: You must be an account administrator to access the ADMIN menu.</aside>
+    <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/admin/admin-menu.png" /></figure>
+    <p>The account settings menu provides the following options:</p>
+    <ul>
+      <li><a href="#account_info">Account Information</a></li>
+      <li><a href="#users">User Management</a></li>
+      <li><a href="#account_settings">Account Settings</a></li>
+      <li><a href="#fields">Video Fields</a></li>
+      <li><a href="#sharing">Media Sharing</a></li>
+      <li><a href="#billing">Billing</a></li>
+    </ul>
   </section>
   <section class="bcls-section">
-    <h2>Editing profile information</h2>
-    <p>Any of the fields in the Profile Information section can be edited. Click <strong>Save Changes</strong> to save the changes.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/edit-profile.png" /></figure>
-    <p>Notes on editing:</p>
-    <ul>
-      <li>You can't change your email address. If you need to change your email address, contact an account administrator and have them do it as part of user management.</li>
-      <li>You can change your password but you must verify your current password</li>
-      <li>Passwords need to be no shorter than 8 letters and contain at least one number and one letter</li>
-      <li>You can use the Language dropdown to select the  language:
-        <ul>
-          <li>English</li>
-          <li>Spanish (Spain)</li>
-          <li>Japanese</li>
-          <li>French (France)</li>
-          <li>Chinese (Traditional)</li>
-          <li>Korean</li>
-        </ul>
-      </li>
-    </ul>
-    <aside class="bcls-aside bcls-aside--information language-editable">Note: If you are an Administrator, you can use the <a href="/docs/admin/managing-users.html">Managing Users</a> page to change a user's password and role.</aside>
+    <h2 id="account_info">Account Information</h2>
+    <p>The Account Information option allows you to edit the account name and mailing address. For more information, see <a href="managing-account-information.html">Managing Account Information</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="users">User Management</h2>
+    <p>The User Management option allows you to manage the users who are authorized to use the Brightcove Engage account. For more information on managing users, see <a href="managing-users.html">Managing Users</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="account_settings">Account Settings</h2>
+    <p>The Account Settings allow you to set the default reporting time zone for the account. The reporting time zone is used to calculate day boundaries for reporting data. Changing the reporting time zone setting only affects data going forward, and changes are not applied retroactively. If you change this setting, you may see a flat spot or a spike in your analytics data when looking at day boundaries where the change was applied. Updates to this setting may not take effect immediately and analytics data may continue to refer to the old setting until the system processes the changes.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/admin/account-settings.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="fields">Video Fields</h2>
+    <p>The Video Fields option allows you to mark standard video fields as required and also allows you to view, create, and modify custom metadata fields for your account. For more information on configuring video fields, see <a href="managing-video-fields.html">Managing Video Fields</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="sharing">Media Sharing</h2>
+    <p>The Media Sharing option allows you to upload videos once and then share the videos to other Brightcove accounts. For more information on media sharing, see <a href="managing-media-sharing-settings.html">Managing Media Sharing Settings</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="billing">Billing</h2>
+    <p>The Billing option allows you to view billing information for the account. For more information on billing, see <a href="viewing-billing-information.html">Viewing Billing Information</a>.</p>
   </section>
 </article>
 
