@@ -17,6 +17,8 @@
       url: /get-started/step-by-step-mobile-app.html
     - name: Step-by-Step Creating and Publishing a Web Experience
       url: /get-started/step-by-step-web-exp.html
+    - name: Brightcove Engage Training Videos
+      url: /get-started/brightcove-engage-training-videos.html
 - section: Documentation
   url: /docs/
   docs:
