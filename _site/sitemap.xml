@@ -41,6 +41,13 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/get-started/brightcove-engage-training-videos.html</loc>
+        <lastmod>2019-12-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/docs/videos/capturing-poster-and-thumbnail-images.html</loc>
         <lastmod>2019-12-20</lastmod>
         <changefreq>daily</changefreq>
@@ -160,21 +167,7 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/docs/admin/</loc>
-        <lastmod>2019-12-20</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/docs/experiences/</loc>
-        <lastmod>2019-12-20</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/</loc>
+        <loc>https://engage.support.brightcove.com/support/</loc>
         <lastmod>2019-12-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -188,14 +181,28 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/docs/analytics/</loc>
+        <loc>https://engage.support.brightcove.com/</loc>
         <lastmod>2019-12-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/docs/</loc>
+        <loc>https://engage.support.brightcove.com/docs/admin/</loc>
+        <lastmod>2019-12-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/get-started/</loc>
+        <lastmod>2019-12-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/</loc>
         <lastmod>2019-12-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -209,14 +216,14 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/support/</loc>
+        <loc>https://engage.support.brightcove.com/docs/</loc>
         <lastmod>2019-12-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/get-started/</loc>
+        <loc>https://engage.support.brightcove.com/docs/analytics/</loc>
         <lastmod>2019-12-20</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
