@@ -2,43 +2,75 @@
 title: Documentation 
 parent: Home
 ---
+<style>
+  h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
+    font-size: 3rem;
+    color:{{site.product_color}};
+    margin-right: 1rem;
+  }
+  .card-icon I {
+    color: {{site.product_color}};
+  }
+</style>
 <article class="bcls-article">
-    <i class="fad fa-file-alt fa-3x" style="color: seagreen;"></i>
-  <h1>Documentation</h1>
+    
+  <h1><i class="fal fa-file-alt"></i> Documentation</h1>
   <summary></summary>
-  <section onclick="window.location.pathname = '/videos/';" class="bcls-card"> <i class="fad fa-film fa-3x" style="color: mediumblue;"></i>
-    <h2 id="videos"><a href="docs/videos/index.html">Managing Videos</a></h2>
-    <p>Learn how to upload and manage videos.</p>
-    <ul>
-      <li><a href="/docs/videos/uploading-videos.html">Uploading Videos</a></li>
-      <li><a href="/docs/videos/managing-videos.html">Managing Videos</a></li>
-      <li><a href="/docs/videos/creating-and-managing-playlists.html">Creating Playlists</a></li>
-      <li><a href="/docs/videos/index.html">View All...</a></li>
-    </ul>
-  </section>
-  <section onclick="window.location.pathname = '/experiences/';" class="bcls-card"> <i class="fad fa-phone-laptop fa-3x" style="color: darkorange;"></i>
-    <h2 id="experiences"><a href="docs/experiences/index.html">Creating Experiences</a></h2>
-    <p>Learn how to create Mobile App and Web experiences.</p>
-    <ul>
-      <li><a href="/docs/experiences/creating-and-managing-experiences.html">Creating and Managing Experiences</a></li>
-      <li><a href="/docs/experiences/using-experience-editor-customize-mobile-app-experience.html">Customizing Mobile Apps</a></li>
-      <li><a href="/docs/experiences/using-experience-editor-customize-web-experience.html">Customizing Web Applications</a></li>
-      <li><a href="/docs/experiences/index.html">View All...</a></li>
-    </ul>
-  </section>
-  <section onclick="window.location.pathname = '/analytics/';" class="bcls-card"> <i class="fad fa-analytics  fa-3x" style="color: dodgerblue;"></i>
-    <h2 id="analytics"><a href="docs/analytics/index.html">Reviewing Analytics</a></h2>
-    <p>Learn how to view video analytics to see how your videos are performing.</p>
-    <ul>
-      <li><a href="/docs/analytics/reviewing-video-analytics.html">Reviewing Video Analytics</a></li>
-    </ul>
-  </section>
-  <section onclick="window.location.pathname = '/admin/';" class="bcls-card"> <i class="fad fa-user-cog fa-3x" style="color: crimson;"></i>
-    <h2 id="admin"><a href="docs/admin/index.html">Administering Accounts</a></h2>
-    <p>Learn how to add users to your account and configure other account settings.</p>
-    <ul>
-      <li><a href="/docs/admin/managing-users.html">Managing Users</a></li>
-      <li><a href="/docs/admin/index.html">View all...</a></li>
-    </ul>
+  <section class="card-wrapper">
+    <section onclick="window.location.pathname = '/docs/videos/';" class="bcls-card"> 
+      <div class="card-icon">
+        <i class="fas fa-film"></i>
+      </div>
+      <div class="card-content">
+        <h2 id="videos"><a href="/docs/videos/index.html">Managing Videos</a></h2>
+        <p>Learn how to upload and manage videos.</p>
+        <ul>
+          <li><a href="/docs/videos/uploading-videos.html">Uploading Videos</a></li>
+          <li><a href="/docs/videos/managing-videos.html">Managing Videos</a></li>
+          <li><a href="/docs/videos/creating-and-managing-playlists.html">Creating Playlists</a></li>
+          <li><a href="/docs/videos/index.html">View All...</a></li>
+        </ul>
+      </div>
+    </section>
+    <section onclick="window.location.pathname = '/docs/experiences/';" class="bcls-card"> 
+      <div class="card-icon">
+        <i class="far fa-phone-laptop"></i>
+      </div>
+      <div class="card-content">
+        <h2 id="experiences"><a href="/docs/experiences/index.html">Creating Experiences</a></h2>
+        <p>Learn how to create Mobile App and Web experiences.</p>
+        <ul>
+          <li><a href="/docs/experiences/creating-and-managing-experiences.html">Creating and Managing Experiences</a></li>
+          <li><a href="/docs/experiences/using-experience-editor-customize-mobile-app-experience.html">Customizing Mobile Apps</a></li>
+          <li><a href="/docs/experiences/using-experience-editor-customize-web-experience.html">Customizing Web Applications</a></li>
+          <li><a href="/docs/experiences/index.html">View All...</a></li>
+        </ul>
+      </div>
+    </section>
+    <section onclick="window.location.pathname = '/docs/analytics/';" class="bcls-card"> 
+      <div class="card-icon">
+        <i class="far fa-chart-bar"></i>
+      </div>
+      <div class="card-content">
+        <h2 id="analytics"><a href="/docs/analytics/index.html">Reviewing Analytics</a></h2>
+        <p>Learn how to view video analytics to see how your videos are performing.</p>
+        <ul>
+          <li><a href="/docs/analytics/reviewing-video-analytics.html">Reviewing Video Analytics</a></li>
+        </ul>
+      </div>
+    </section>
+    <section onclick="window.location.pathname = '/docs/admin/';" class="bcls-card"> 
+      <div class="card-icon">
+        <i class="fal fa-tools"></i>
+      </div>
+      <div class="card-content">
+        <h2 id="admin"><a href="/docs/admin/index.html">Administering Accounts</a></h2>
+        <p>Learn how to add users to your account and configure other account settings.</p>
+        <ul>
+          <li><a href="/docs/admin/managing-users.html">Managing Users</a></li>
+          <li><a href="/docs/admin/index.html">View all...</a></li>
+        </ul>
+      </div>
+    </section>
   </section>
 </article>

@@ -37,6 +37,7 @@ site_url: "https://engage.support.brightcove.com"
 #TODO change product
 product: Brightcove Engage
 color: rgb(51, 51, 51)
+product_color: rgb(243, 148, 36)
 defaults:
   - 
     scope:
