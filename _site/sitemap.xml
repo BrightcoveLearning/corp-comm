@@ -167,20 +167,6 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/support/</loc>
-        <lastmod>2020-01-08</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/docs/videos/</loc>
-        <lastmod>2020-01-08</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
         <loc>https://engage.support.brightcove.com/</loc>
         <lastmod>2020-01-08</lastmod>
         <changefreq>daily</changefreq>
@@ -195,6 +181,13 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/docs/experiences/</loc>
+        <lastmod>2020-01-08</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/get-started/</loc>
         <lastmod>2020-01-08</lastmod>
         <changefreq>daily</changefreq>
@@ -202,7 +195,21 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/docs/experiences/</loc>
+        <loc>https://engage.support.brightcove.com/docs/analytics/</loc>
+        <lastmod>2020-01-08</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/docs/videos/</loc>
+        <lastmod>2020-01-08</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/support/</loc>
         <lastmod>2020-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -223,7 +230,7 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/docs/analytics/</loc>
+        <loc>https://engage.support.brightcove.com/get-started/installing-brightcove-engage-app-internal.html</loc>
         <lastmod>2020-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -406,13 +413,6 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/docs/videos/uploading-videos.html</loc>
-        <lastmod>2020-01-08</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/get-started/using-brightcove-engage-app-internal.html</loc>
         <lastmod>2020-01-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
