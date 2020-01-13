@@ -1,6 +1,8 @@
-- section: Home
+- section: 
+  name: Home
   url: /index.html
-- section: Getting Started
+- section: 
+  name: Getting Started
   url: /get-started/
   docs:
     - name: Getting Started with your Brightcove Engage Trial
@@ -21,7 +23,8 @@
       url: /get-started/step-by-step-web-exp.html
     - name: Brightcove Engage Training Videos
       url: /get-started/brightcove-engage-training-videos.html
-- section: Documentation
+- section: 
+  name: Documentation
   url: /docs/
   docs:
     - name: Managing Videos
@@ -108,12 +111,14 @@
         url: /docs/admin/managing-media-sharing-settings.html
       - name: Managing Profile Information
         url: /docs/admin/managing-profile-information.html
-- section: Release Notes
+- section: 
+  name: Release Notes
   url: /release-notes/
   docs:
     - name: 2020
       url: /release-notes/2020.html
-- section: Support
+- section: 
+  name: Support
   url: /support/
   docs:
     - name: Open a Support Case
