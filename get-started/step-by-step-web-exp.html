@@ -27,7 +27,7 @@ parent: Getting Started
   </section>
   <section class="bcls-section">
     <h2 id="setup">Before you get started</h2>
-    <p>This step-by-step guide will use the videos that are included with the Brightcove Engage trial account. Feel free to <a href="/docs/videos/uploading-videos.html">upload</a> and use your own videos.</p>
+    <p>This step-by-step guide will use the sample videos that are included with the Brightcove Engage trial account. Feel free to <a href="/docs/videos/uploading-videos.html">upload</a> and use your own videos.</p>
     <ol class="bcls-tasklist-restart" style="--s:1">
       <li>If you are using your own videos, you should <a href="/docs/videos/creating-and-managing-playlists.html">create several playlists</a> to organize the videos.</li>
     </ol>
@@ -36,6 +36,7 @@ parent: Getting Started
     <h2 id="create">Creating a Web experience</h2>
     <p>To create a Web Experience using Brightcove Engage, you will complete the following tasks:</p>
     <ul>
+      <li><a href="#organize">Organize videos using playlists</a></li>
       <li><a href="#create">Create a new Web experience</a></li>
       <li><a href="#details">Edit the site details</a></li>
       <li><a href="#objects">Add images and text to a page template</a></li>
@@ -46,12 +47,47 @@ parent: Getting Started
     </ul>
   </section>
   <section class="bcls-section">
-    <h2 id="create">Creating a new Web experience</h2>
-    <p>To create a new Web experience, follow these steps.</p>
+    <h2 id="organize">Organizing videos using playlists</h2>
+    <p>Before you start creating experiences it's helpful to think about how you want to organize/group your videos. Typically, you'll want to group related videos together. For example, you may want to group the CEO videos together, the HR videos together , marketing videos, etc. When viewers use your Web Experience, they will see a list of these groups, select a group and then choose the videos they want to watch. When using Brightcove Engage, related videos are grouped using Playlists.</p>
+    <p>To organize the sample videos into playlists, follow these steps.</p>
     <ol class="bcls-tasklist-restart" style="--s:1">
       <li>Login to Brightcove Engage. The <strong>Projects</strong> page will appear.</li>
-      <li>Click <strong>New Experience</strong>. A list of  templates will be displayed.</li>
-      <li> Locate the <strong>Web Template</strong> and click <strong>Choose</strong>.
+      <li>Click the <strong>Videos</strong> tab in the navigation header. A list of the sample videos will appear.</li>
+      <li>In the left navigation, click <strong>+ Create Playlist</strong>.</li>
+      <li>Set the <strong>Playlist type</strong> to <strong>Manual</strong>.</li>
+      <li>Set the <strong>Playlist Name</strong> to <code>Featured Video</code>.</li>
+      <li>Check <strong>Show Playlist in Sidebar</strong>.</li>
+      <li>Click <strong>Save</strong>.</li>
+      <li>Using the same settings, create two more playlists, <code>Sales Videos</code> and <code>HR Videos</code>. You should have three playlists created.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/web-app-three-playlists.png" /></figure>
+      </li>
+      <li>In the left navigation, click <strong>All Videos</strong>.</li>
+      <li>Click  the checkbox next to the <strong>2019 All Hands Meeting</strong> video and then click <strong>More &gt; Add to Playlist</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/web-app-featured-video-playlist.png" /></figure>
+      </li>
+      <li>Select the <strong>Featured Video</strong> playlist and then click <strong>Add</strong>.</li>
+      <li>Select the following videos and add them to the <strong>Sales Videos</strong> playlist. </li>
+      <ul>
+        <li>2018 Sales Strategy Meeting</li>
+        <li>Sales How-To - Developing Your Pipeline in New Markets - Ep 02</li>
+        <li>Sales How-To - New Techniques for Upselling Excursions - Ep 01</li>
+      </ul>
+      <li>Select the following videos and add them to the <strong>HR Videos</strong> playlist. </li>
+      <ul>
+        <li>HR - Building Your Internal Communications Plan - E02</li>
+        <li>HR - Onboarding New Employees - E01</li>
+      </ul>
+    </ol>
+    <p>All of the videos are now organized into playlists. Clicking a playlist name in the left navigation will display the videos in that playlist.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/web-app-sales-videos.png" /></figure>
+    For more information on playlists, see the <a href="/docs/videos/creating-and-managing-playlists.html">Creating and Managing Playlists</a> topic. </section>
+  <section class="bcls-section">
+    <h2 id="create">Creating a new Web experience</h2>
+    <p>Now that the videos are organized into playlists, we can create a new experience. To create a new Web experience, follow these steps.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>In the navigation header, click the <strong>Projects</strong> tab.</li>
+      <li>Confirm the <strong>Create Experience</strong> page appears. If a list of projects appears, click <strong>New Experience</strong> to display the <strong>Create Experience</strong> page.</li>
+      <li>Locate the <strong>Web Template</strong> and click <strong>Choose</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/choose-web-template.png" /></figure>
         <aside class="bcls-aside bcls-aside--information language-editable">Note: Once you select a template it can't be changed. For more information on templates, see the <a href="/docs/experiences/overview-experience-templates.html">Overview of Experience Templates</a> topic.</aside>
       </li>
@@ -60,7 +96,7 @@ parent: Getting Started
       </li>
       <li>Click <strong>Create Experience</strong>.</li>
     </ol>
-    <p>The Experience Editor will open. The Experience Editor is used to customize the experience and provides the ability to manage page layouts, add videos, choose styles and configure other settings. All of the customization settings are accessed using the left navigation menu.</p>
+    <p>The Experience Editor will open. The Experience Editor is used to customize the experience and provides the ability to customize page layouts, add videos, choose styles and configure other settings. All of the customization settings are accessed using the left navigation menu.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/web-app-left-nav.png" /></figure>
   </section>
   <section class="bcls-section">
@@ -82,8 +118,7 @@ parent: Getting Started
     <p>For more information on adding objects to page templates, see <a href="/docs/experiences/adding-objects-web-experience-pages.html">Adding Images, Text and Links to Web Experience Pages</a>.</p>
     <p>To add objects to a page template, follow these steps.</p>
     <ol class="bcls-tasklist-restart" style="--s:1">
-      <li>Click <strong>PAGES</strong> in the left navigation.</li>
-      <li>Click the <strong>Home</strong> page in the left margin. Pencil icons (<img alt="" src="/assets/images/experiences/pencil-edit-icon.png" />) indicate areas on the page where objects can be added. Static text objects on the page can be edited by clicking on them.</li>
+      <li>Click <strong>PAGES &gt; Home</strong> in the left navigation. Pencil icons (<img alt="" src="/assets/images/experiences/pencil-edit-icon.png" />) indicate areas on the page where images/text/links can be added. Static text objects on the page can be edited by clicking on them.</li>
       <li>At the top of the page, click on <strong>+ Add Content</strong>.</li>
       <li>Click on the <strong>Upload </strong> option and then click <strong>Save</strong>. Selecting <strong>Upload</strong> will add an image placeholder to the page.</li>
       <li>Click on <strong>+ Add Photo</strong>.</li>
@@ -102,30 +137,24 @@ parent: Getting Started
   </section>
   <section class="bcls-section">
     <h2 id="addvideos">Creating collections and adding videos to the collections</h2>
-    <p>Using the Experience Editor, you can select which videos to display in the experience. When creating experiences, videos are organized into collections. Collections are created based upon video metadata and can include:</p>
-    <ul>
-      <li>Playlists</li>
-      <li>Keywords</li>
-      <li>Custom metadata</li>
-      <li>Tags</li>
-    </ul>
+    <p>Using the Experience Editor, you can select which videos to display in the experience. When creating experiences, videos are organized into collections. For this example, collections will be based upon the playlists that were <a href="#organize">created earlier</a>.</p>
     <p>For more information on creating collections and adding videos to an experience, see <a href="/docs/experiences/adding-videos-experience.html">Adding Videos to an Experience</a>.</p>
     <p>To add videos to the experience, follow these steps.</p>
     <ol class="bcls-tasklist-restart" style="--s:1">
       <li>Click <strong>VIDEOS</strong> in the left navigation.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/web-app-collections-empty.png" /></figure>
       </li>
-      <li>Name the first collection <strong>Welcome Aboard!</strong> and then press <strong>enter</strong>.</li>
+      <li>Name the first collection <strong>Featured Video</strong> and then press <strong>enter</strong>.</li>
       <li>Click the collection name to open the collection editor.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/web-app-first-collection.png" /></figure>
       </li>
       <li>Select <strong>Playlist</strong> for the criteria.</li>
-      <li>Click the <strong>Welcome Aboard!</strong> playlist. The video(s) in that playlist will appear in the videos list. Click <strong>Save</strong>.
+      <li>Click the <strong>Featured Video</strong> playlist. The video in that playlist will appear in the videos list. Click <strong>Save</strong>.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/web-app-first-collection-assigned.png" /></figure>
         <aside class="bcls-aside bcls-aside--information language-editable">Note: When using a playlist video assignment, the order of the videos is based upon the playlist settings that were set in the <strong>Videos</strong> page.</aside>
       </li>
-      <li>Create another collection named<strong> Sales Training </strong>using the Sales Training playlist as the criteria.</li>
-      <li>Create another collection named <strong>CEO Updates</strong> using the CEO Updates playlist as the criteria.
+      <li>Create another collection named<strong> Sales </strong>using the Sales Videos playlist as the criteria.</li>
+      <li>Create another collection named <strong>HR</strong> using the HR Videos playlist as the criteria.
         <figure class="bcls-figure"></figure>
       </li>
       <li>Confirm that 3 collections have been created.
@@ -156,7 +185,7 @@ parent: Getting Started
       <li>Click <strong> STYLE </strong> in the left navigation.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/web-app-style-menu.png" /></figure>
       </li>
-      <li>A <strong>Theme</strong> is a set of colors and fonts that can be applied to a template. Select a <strong>Theme</strong>.</li>
+      <li>A <strong>Theme</strong> is a set of colors and fonts that can be applied to a template. Select a <strong>Theme</strong>. This example will use the <strong>Shades of Blue</strong> theme.</li>
       <li>Select a <strong>Primary</strong> and <strong>Secondary</strong> font to use. The <strong>Site Title</strong> font controls the title font used in the header. If you followed this step-by-step document, an image was added to the header earlier.</li>
       <li>Click the <strong>&lt; Back to Experience</strong> link at the top of the Style menu. </li>
     </ol>
@@ -173,6 +202,6 @@ parent: Getting Started
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/web-app-publish.png" /></figure>
       </li>
     </ol>
-    <p>After publishing the site, click on the site URL to open it in another browser tab.</p>
+    <p>Click on the site URL to open it in another browser tab.</p>
   </section>
 </article>
