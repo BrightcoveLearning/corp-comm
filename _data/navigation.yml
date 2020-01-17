@@ -9,17 +9,17 @@
       url: /get-started/getting-started-brightcove-engage-trial.html
     - name: Getting Started with Brightcove Engage
       url: /get-started/getting-started-brightcove-engage.html
-    - name: Creating and Publishing Mobile App Experiences
+    - name: Creating Mobile App Experiences
       url: /get-started/overview-create-edit-publish-mobile-app-exp.html
-    - name: Creating and Publishing Web Experiences
+    - name: Creating Web Experiences
       url: /get-started/overview-create-edit-publish-web-exp.html
     - name: Using the Brightcove Engage Application
       url: /get-started/using-brightcove-engage-app.html
-    - name: Installing the Brightcove Engage Application for Internal Applications
+    - name: 'Installing the Brightcove Engage App (Internal)'
       url: /get-started/using-brightcove-engage-app-internal.html
-    - name: Step-by-Step - Creating and Publishing a Mobile App Experience
+    - name: Step-by-Step - Creating a Mobile App Experience
       url: /get-started/step-by-step-mobile-app.html
-    - name: Step-by-Step Creating and Publishing a Web Experience
+    - name: Step-by-Step - Creating a Web Experience
       url: /get-started/step-by-step-web-exp.html
     - name: Brightcove Engage Training Videos
       url: /get-started/brightcove-engage-training-videos.html
@@ -44,7 +44,7 @@
           url: /docs/videos/uploading-poster-and-thumbnail-images.html
         - name: Creating and Managing Playlists
           url: /docs/videos/creating-and-managing-playlists.html
-        - name: Search for Videos
+        - name: Searching for Videos
           url: /docs/videos/how-to-search-for-videos.html
         - name: Working with Shared Videos
           url: /docs/videos/working-with-shared-videos.html
@@ -89,8 +89,8 @@
           url: /docs/experiences/previewing-publishing-web-experience.html
         - name: Adding a Logo to Mobile App Experience Pages
           url: /docs/experiences/adding-logo-mobile-app-experience.html
-        - name: Customizing the Content of Web Experience Pages
-          url: /docs/experiences/customizing-content-web-experience-pages.html
+        - name: Adding Images, Text and Links to Web Experience Pages
+          url: /docs/experiences/adding-objects-web-experience-pages.html
     - name: Reviewing Analytics
       url: /docs/analytics/
       docs:
