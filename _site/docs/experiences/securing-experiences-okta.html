@@ -176,6 +176,8 @@
                         
                         <li><a href="/docs/experiences/adding-objects-web-experience-pages.html">Adding Images, Text and Links to Web Experience Pages</a></li>
                         
+                        <li><a href="/docs/experiences/securing-experiences-pingone.html">Securing Experiences Using PingOne SSO</a></li>
+                        
                       </ul>
                     </li>
                   
@@ -260,15 +262,23 @@
     <p>When an experience is secured using SSO, users will be required to authenticate before they can access a Web or Mobile App Experience.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/ping-one-device-login.png" /></figure>
     <aside class="bcls-aside bcls-aside--information language-editable">Note: The steps and images in this topic are using the <a href="https://www.okta.com/free-trial">trial version</a> of Okta SSO.</aside>
-    <p>The steps in this topic assumed you have installed the PingOne software and have confirmed your account through email.</p>
+    <p>The steps in this topic assumed you have signed up for an Okta trial account, signed into your account and can access the Okta Dashboard page.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="identity">Creating an identity repository</h2>
-    <p>Start by creating an identity repository. </p>
+    <h2 id="identity">Creating an application</h2>
+    <p>Start by creating an application. </p>
     <ol class="bcls-tasklist-restart" style="--s:1">
-      <li>Login to your PingOne account. The <strong>Dashboard</strong> page will appear.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/ping-dashboard.png" /></figure>
-      </li>
+      <li>On the Dashboard page, in the right navigation, click <strong>Add Applications</strong>.</li>
+      <li>On the <strong>Add Application</strong> page, click <strong>Create New App</strong>.</li>
+      <li>Select a <strong>Platform</strong> of <strong>Web</strong> and a <strong>Sign on method</strong> of <strong>SAML 2.0</strong>.</li>
+      <li>Click <strong>Create</strong>.</li>
+      <li>Enter an <strong>App name</strong>.</li>
+      <li>(Optional) Browse and select and <strong>App logo</strong>.</li>
+      <li>Click <strong>Next</strong>.</li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
       <li>Click <strong>SETUP</strong> in the header. The <strong>Settings</strong> page will open.</li>
       <li>Click <strong>Connect to an Identity Repository</strong>.</li>
       <li>Click on <strong>PINGONE DIRECTORY</strong> and then click <strong>Next</strong>.</li>

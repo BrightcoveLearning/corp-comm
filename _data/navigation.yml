@@ -91,6 +91,8 @@
           url: /docs/experiences/adding-logo-mobile-app-experience.html
         - name: Adding Images, Text and Links to Web Experience Pages
           url: /docs/experiences/adding-objects-web-experience-pages.html
+        - name: Securing Experiences Using PingOne SSO
+          url: /docs/experiences/securing-experiences-pingone.html
     - name: Reviewing Analytics
       url: /docs/analytics/
       docs:
