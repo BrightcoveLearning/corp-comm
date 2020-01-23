@@ -8,7 +8,7 @@ grandparent: Documentation
   <summary>In this topic you will learn how to secure experiences using Okta SSO.</summary>
   <section class="bcls-section">
     <p>When an experience is secured using SSO, users will be required to authenticate before they can access a Web or Mobile App Experience.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/ping-one-device-login.png" /></figure>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/okta-device-login.png" /></figure>
     <aside class="bcls-aside bcls-aside--information language-editable">Note: The steps and images in this topic are using the <a href="https://www.okta.com/free-trial">trial version</a> of Okta SSO.</aside>
     <p>The steps in this topic assumed you have signed up for an Okta trial account, signed into your account and can access the Okta Dashboard page.</p>
   </section>
@@ -16,79 +16,31 @@ grandparent: Documentation
     <h2 id="identity">Creating an application</h2>
     <p>Start by creating an application. </p>
     <ol class="bcls-tasklist-restart" style="--s:1">
-      <li>On the Dashboard page, in the right navigation, click <strong>Add Applications</strong>.</li>
-      <li>On the <strong>Add Application</strong> page, click <strong>Create New App</strong>.</li>
-      <li>Select a <strong>Platform</strong> of <strong>Web</strong> and a <strong>Sign on method</strong> of <strong>SAML 2.0</strong>.</li>
+      <li>Login to your Okta trial account.</li>
+      <li>On the <strong>Dashboard</strong> page, in the right navigation, click <strong>Add Applications</strong>.</li>
+      <li>On the <strong>Add Application</strong> page, click <strong>Create New App</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/okta-add-new-app.png" /></figure>
+      </li>
+      <li>Select a <strong>Platform</strong> of <strong>Web</strong> and a <strong>Sign on method</strong> of <strong>SAML 2.0</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/okta-create-new-app-dialog.png" /></figure>
+      </li>
       <li>Click <strong>Create</strong>.</li>
       <li>Enter an <strong>App name</strong>.</li>
-      <li>(Optional) Browse and select and <strong>App logo</strong>.</li>
-      <li>Click <strong>Next</strong>.</li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li>Click <strong>SETUP</strong> in the header. The <strong>Settings</strong> page will open.</li>
-      <li>Click <strong>Connect to an Identity Repository</strong>.</li>
-      <li>Click on <strong>PINGONE DIRECTORY</strong> and then click <strong>Next</strong>.</li>
-      <li>Confirm that the directory has been configured.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/ping-directory-configured.png" /></figure>
+      <li>(Optional) Browse and select and <strong>App logo</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/okta-new-app-general-settings.png" /></figure>
       </li>
       <li>Click <strong>Next</strong>.</li>
-      <li>For the <strong>MAP ATTRIBUTES</strong> section, keep the default values and click <strong>Finished</strong>.</li>
-    </ol>
-    The PingOne Directory page will display the directory statistics.</section>
-  <section class="bcls-section">
-    <h2 id="create_app">Creating an application</h2>
-    <p>Next we'll create an application that will be secured using SSO.</p>
-    <ol class="bcls-tasklist-restart" style="--s:1">
-      <li>Click <strong>APPLICATIONS</strong> in the header. The <strong>My Applications</strong> page will open.</li>
-      <li>Click <strong>Add Application</strong>.</li>
-      <li>Select <strong>New SAML Application</strong>.</li>
-      <li>Enter an <strong>Application Name</strong> and <strong>Application Description</strong>.</li>
-      <li>Select a <strong>Category</strong> (recommend <strong>Communication</strong>).</li>
-      <li><strong>(Optional)</strong> Click <strong>Change</strong> and browse and select an icon for the application.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/ping-one-app-details.png" /></figure>
+      <li>Set the <strong>Single sign on URL</strong> to <strong>https://auth.bcvp0rtal.com/login/callback</strong>.</li>
+      <li>For the <strong>Audience URI (SP Entity ID)</strong> enter the Okta URL for your Okta homepage. This will be listed on the new account email you received from Okta when your trial account was created.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/okta-new-app-saml-settings.png" /></figure>
       </li>
-      <li>Click <strong>Continue to Next Step</strong>.</li>
-      <li>On the <strong>Application Configuration</strong> page, locate the <strong>SAML Metadata</strong> field.</li>
-      <li>Click the <strong>Download</strong> link.</li>
-    </ol>
-    The downloaded file will be needed when creating an Access Control Profile in Brightcove Engage.</section>
-  <section class="bcls-section">
-    <h2 id="access_control">Creating an Access Control Profile</h2>
-    <p>You need to create an Access Control Profile that will be used to secure any experiences you want to secure using SSO.</p>
-    <ol class="bcls-tasklist-restart" style="--s:1">
-      <li>Login to your Brightcove Engage account.</li>
-      <li>Click <strong>Settings</strong> in the header.</li>
-      <li>Click <strong>Create Profile</strong>.</li>
-      <li>Give the profile a <strong>Name</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/ping-one-acp-name.png" /></figure>
-      </li>
-      <li>Locate the <strong>Import SSO metadata</strong> section and then click <strong>Select File</strong>.</li>
-      <li>Browse and select the SAML metadata file you downloaded from PingOne (in the previous section).</li>
-      <li>Confirm that values for the <strong>SAML 2.0 Endpoint</strong> and <strong>X.509 Certificate</strong> have been filled in.</li>
-      <li>Click <strong>Save</strong> and confirm that the profile was created.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/ping-one-acp-created.png" /></figure>
-      </li>
-      <li>Click on the <strong>Metadata URL</strong> field and save the XML file.</li>
-    </ol>
-    <p>The XML file will be needed to complete the application configuration in PingOne.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="complete_app">Completing the application configuration </h2>
-    <ol class="bcls-tasklist-restart" style="--s:1">
-      <li>Return to the PingOne application.</li>
-      <li>On the <strong>Application Configuration</strong> section, locate the <strong>Upload Metadata</strong> field.</li>
-      <li>Click <strong>Select File</strong> and browse and select the file you downloaded after creating the Access Control Profile in Brightcove Engage.</li>
-      <li>Confirm the <strong>Assertion Consumer Service (ACS)</strong> and <strong>Entity ID</strong> fields were filled in with values after the import.</li>
-      <li>Click <strong>Continue to Next Step</strong>.</li>
-      <li>On the <strong>SSO Attribute Mapping</strong> section, add the following attributes:
+      <li>In the <strong>ATTRIBUTES STATEMENTS</strong> section, the following attributes should be created:
         <aside class="bcls-aside bcls-aside--information language-editable">Note: The attributes <strong>MUST</strong> be named exactly as shown here.</aside>
         <table class="bcls-table">
           <thead class="bcls-table__head">
             <tr>
-              <th>Application Attribute</th>
-              <th>Literal Value</th>
+              <th width="209">Name</th>
+              <th width="222"> Value</th>
             </tr>
           </thead>
           <tbody class="bcls-table__body">
@@ -106,31 +58,54 @@ grandparent: Documentation
             </tr>
           </tbody>
         </table>
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/ping-one-attribute-mapping.png" /></figure>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/okta-new-app-saml-attributes.png" /></figure>
+        <p>Mapping the application attributes will cause the following to happen in Brightcove Engage Experiences:</p>
+        <ul>
+          <li>For Mobile App Experiences, the user's name and email address will appear on the Profile page</li>
+          <li>For all experiences, the user's email address will appear as part of video analytics</li>
+        </ul>
       </li>
-      <li>Click <strong>Save and Publish</strong>.</li>
-      <li>Confirm that the application was created.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/ping-one-application-created.png" /></figure>
+      <li>Click the <strong> &lt;&gt; Preview the SAML Assertion</strong> button. Valid XML should be displayed in a new browser tab. If there are any errors, a message will be displayed.</li>
+      <li>Click<strong> Next</strong>.</li>
+      <li>Select an option for <strong>Are you a customer or partner? </strong>and then click <strong>Finish</strong>.</li>
+      <li>Confirm that the application was created and the <strong>Settings</strong> page appears.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/okta-new-app-created.png" /></figure>
       </li>
+      <li>Locate where it says <strong>SAML 2.0 is not configured until you complete the setup instructions</strong>. Click <strong>View Setup Instructions</strong>.</li>
     </ol>
-    <p>Mapping the application attributes will cause the following to happen in Brightcove Engage Experiences:</p>
-    <ul>
-      <li>For Mobile App Experiences, the user's name and email address will appear on the Profile page</li>
-      <li>For all experiences, the user's email address will appear as part of video analytics</li>
-    </ul>
+    <p>The <strong>How to Configure SAML 2.0</strong> instructions will open in a new browser tab. This information will be needed when creating an Access Control Profile in Brightcove Engage.</p>
   </section>
   <section class="bcls-section">
-    <h2 id="users2">Editing group permissions</h2>
-    <p>The final step is to give all users in PingOne access to the Brightcove Engage application.</p>
+    <h2 id="access_control">Creating an Access Control Profile</h2>
+    <p>You need to create an Access Control Profile that will be used to secure any experiences you want to secure using SSO.</p>
     <ol class="bcls-tasklist-restart" style="--s:1">
-      <li>Click <strong>USERS</strong> in the header. The <strong>User Groups</strong> page will open. Some default groups will have been created.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/ping-one-groups.png" /></figure>
+      <li>Login to your Brightcove Engage account.</li>
+      <li>Click <strong>Settings</strong> in the header.</li>
+      <li>Click <strong>Create Profile</strong>.</li>
+      <li>Give the profile a <strong>Name</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/okta-acp-name.png" /></figure>
       </li>
-      <li>Click <strong>Edit</strong> next to the <strong>Users@directory</strong> group.</li>
-      <li>Select the application you created so all users will have access to the application.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/ping-one-group-association.png" /></figure>
+      <li>Return to the How to Configure SAML 2.0 instructions. Copy the <strong>Identity Provider Single Sign-On URL</strong> and paste it into the <strong>SAML 2.0 Endpoint (HTTP)</strong> field.</li>
+      <li>Return to the How to Configure SAML 2.0 instructions. Copy the entire value in the <strong>X.509 Certificate </strong>field and paste it into the <strong>X.509 Certificate</strong> field. Make sure you include the <strong>BEGIN/END CERTIFICATE</strong> lines.</li>
+      <li>Click <strong>Save</strong> and confirm that the profile was created.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/okta-acp-created.png" /></figure>
       </li>
-      <li>Click <strong>Save</strong>.</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="users2">Assigning group permissions</h2>
+    <p>The final step in Okta is to give all users in Okta access to the Brightcove Engage application.</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>Return to the Okta Dashboard.</li>
+      <li>For the Okta application you created, click the <strong>Assignments</strong> tab.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/okta-assignments.png" /></figure>
+      </li>
+      <li>Click <strong>Assign</strong> &gt; <strong>Assign to Groups</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/okta-assign-to-groups.png" /></figure>
+      </li>
+      <li>Click <strong>Assign</strong> next to the <strong>Everyone</strong> group and then click <strong>Done</strong>.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/okta-everyone-assigned.png" /></figure>
+      </li>
     </ol>
   </section>
   <section class="bcls-section">
@@ -140,14 +115,14 @@ grandparent: Documentation
       <li>Return to Brightcove Engage.</li>
       <li>Edit the experience you want to secure.</li>
       <li>In the left navigation, click <strong>ACCESS CONTROL</strong>.</li>
-      <li>Select the <strong>Access Control Profile</strong> that is associated with the PingOne SSO configuration.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/ping-one-select-access-control.png" /></figure>
+      <li>Select the <strong>Access Control Profile</strong> that is associated with the Okta SSO configuration.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/okta-select-access-control.png" /></figure>
       </li>
       <li>Click <strong>Save</strong>.</li>
       <li><strong>Publish</strong> the experience.</li>
     </ol>
-    <p>When you access the experience, you should be prompted by PingOne to login. The following image is when trying to access a Mobile App Experience.
-      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/ping-one-device-login.png" /></figure>
+    <p>When you access the experience, you should be prompted by Okta to login. The following image is when trying to access a Mobile App Experience.
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/okta-device-login.png" /></figure>
     </p>
   </section>
 </article>
