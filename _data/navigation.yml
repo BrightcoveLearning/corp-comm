@@ -93,6 +93,8 @@
           url: /docs/experiences/adding-objects-web-experience-pages.html
         - name: Securing Experiences Using PingOne SSO
           url: /docs/experiences/securing-experiences-pingone.html
+        - name: Securing Experiences Using Okta SSO
+          url: /docs/experiences/securing-experiences-okta.html
     - name: Reviewing Analytics
       url: /docs/analytics/
       docs:
