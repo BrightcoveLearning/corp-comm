@@ -3,11 +3,11 @@ title: Creating and Managing Live Events
 parent: Working with Live Events
 ---
 <article class="bcls-article">
-  <h1>Creating and Managing Live Events using the Live Module</h1>
+  <h1>Creating and Managing Live Events</h1>
   <summary>In this topic you will learn how to create and manage live events.</summary>
   <section class="bcls-section">
     <h2 id="introduction">Introduction</h2>
-    <p>The Live module can be used to help you broadcast a live event to both desktop and mobile devices. After entering your event information into the Live module, you will be provided with a set of encoder settings that you plug into your on-site encoder. All transcoding is done in the cloud so you don't need a hardware based transcoder. </p>
+    <p>The Live features in Brightcove Engage&trade; can be used to broadcast a live event to both Mobile App and Web experiences. After you create a live event, you will be provided with a set of encoder settings that you plug into your on-site encoder. All transcoding is done in the cloud so you don't need a hardware based transcoder. The live video can then be included when creating Mobile App and Web Experiences.</p>
   </section>
   <section class="bcls-section">
     <h2 id="prerequisites">Prerequisites</h2>
@@ -20,12 +20,9 @@ parent: Working with Live Events
   <section class="bcls-section">
     <h2 id="limitations">Limitations</h2>
     <ul>
-      <li class="language-editable">To create a Live stream with DVR on the Media module, you will need first to create a new remote asset from there and then fill a Live module playlist with a "playlist_dvr.m3u8" extension at the end of your URL stream.</li>
-      <li class="language-editable">Live streams with SSAI currently cannot be published via the Live module. If you wish to publish a Live stream with this feature, you must do it from the Media Module.</li>
-      <li class="language-editable">Live broadcasts will experience a 20-30 second delay.</li>
-      <li class="language-editable">Streaming must begin within 30 minutes of the event start (default-level account setting).</li>
-      <li class="language-editable">For users using Internet Explorer, version 10 or later is required.</li>
-      <li class="language-editable">Live streams with DVR are not supported when using the Brightcove Player SDKs. In this case, you should add the DVR playback URL to a remote asset and then use the remote asset URL with the SDK.</li>
+      <li class="language-editable">Live broadcasts will experience a 20-30 second delay</li>
+      <li class="language-editable">Streaming must begin within 30 minutes of the event start</li>
+      <li class="language-editable">For users using Internet Explorer, version 10 or later is required</li>
     </ul>
   </section>
   <section class="bcls-section">
@@ -203,7 +200,7 @@ parent: Working with Live Events
     </div>
     <div>
       <h3 id="clips">Clips</h3>
-      <p>The Clips section displays all of the clips that were created from the live stream. Clicking the clip name will open the clip in the Media module. For information on creating a clip, see <a href="/live/creating-video-clip-using-live-module.html">Creating a Video Clip Using the Live Module</a>.</p>
+      <p>The Clips section displays all of the clips that were created from the live stream. Clicking the clip name will open the clip in the Media module. For information on creating a clip, see <a href="/live/creating-video-clips.html">Creating a Video Clip Using the Live Module</a>.</p>
     </div>
     <div>
       <h3 id="renditions">Renditions</h3>
@@ -274,45 +271,9 @@ parent: Working with Live Events
     </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="social">Connecting to social media</h2>
-    <p>It's possible to connect a live event to a social event that was scheduled in the Social module. Before you can connect a live event to a social event, you should <a href="/node/18749">create a live event in the Social module</a>. Only events that were created with the <strong>Streaming to Social Media</strong> setting set to <strong>Allowed</strong> can be assigned to a scheduled event.</p>
-    <p>To connect a live event to a social event, follow these steps:</p>
-    <ol class="bcls-tasklist-restart">
-      <li class="language-editable"><a href="/node/18749">Create a live event in the Social module</a>.</li>
-      <li class="language-editable">Click on an event to open the Control Room page.</li>
-      <li class="language-editable">Click <strong>Publish and Embed &gt; Connect to Social Media </strong>in the left navigation. A list of scheduled social events will display. If no events display, no scheduled events exist.</li>
-      <li class="language-editable">Click on a scheduled event and then click <strong>Connect</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/select-social-event.png" /></figure>
-      </li>
-    </ol>
-    <p>Once the event is assigned using the Live module, return to the Social module to preview the event and start the streaming process to the social platform.</p>
-  </section>
-  <section class="bcls-section">
     <h2 id="clip">Creating a clip</h2>
-    <p>Clips can be created while the event is in progress or after the event has ended. If clips can't be created, a message will appear when hovering over <strong>Create Clip</strong> in the left navigation. For information on creating a clip, see <a href="/live/creating-video-clip-using-live-module.html">Creating a Video Clip Using the Live Module</a>.</p>
-    <aside class="bcls-aside bcls-aside--information">Note:
-      <ul>
-        <li class="language-editable">
-          <p>Streams are available for clipping for 7 days after the live event has ended.</p>
-        </li>
-        <li class="language-editable">
-          <p>For Static Entry Point (recurring) streams: If during the 7 days after a stream, the stream is re-activated with a 2nd stream, the clipping will only be available for the content of the 2nd stream. The 1st stream will be cleared at that point, and there is no way to create create clips from it anymore, even if it is under 7 days after the stream was deactivated.</p>
-        </li>
-      </ul>
-    </aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="ad">Requesting an ad</h2>
-    <p>If the <strong>Enable Server Side Ad Insertion (SSAI)</strong> option was selected when the event was created, the Control Room page will display a <strong>Goto Ad</strong> button. When clicked, the length of the ad break can be selected.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/goto-ad.png" /></figure>
-    <p>Click <strong>Insert</strong> to insert an ad break into the live stream. If the ad doesn't fill the entire ad break time, the fill slate will be displayed. For information on working with server-side ads in the Live module, see <a href="/node/18753">Implementing Server-Side Ads in the Live Module</a>.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="captions">Captions</h2>
-    <p>Brightcove Live currently supports 608 captions in-band (inside h.264 headers). If captions are inside the h.264 input signal (correctly signaled in the user_data packet) those are passed through to the h.264 outputs.</p>
-    <p>If you are using a broadcast Elemental live encoder you can get captions from SDI (EIA-608/CEA-608) or other sources (SCTE-20, SCC, Teletext, DVB-Sub, Ancillary, ARIB, TTML, SCTE-27, STL, SRT, SMI) and put them into the h.264 stream that you send to us. Other broadcast grade encoders probably can do the same, but we have not formally tested them.</p>
-    <p>WebVTT captions are <strong>not</strong> supported for Live streams.</p>
-    <p>The Brightcove Player has support for in-band captions.</p>
+    <p>Clips can be created while the event is in progress or after the event has ended. If clips can't be created, a message will appear when hovering over <strong>Create Clip</strong> in the left navigation. For information on creating a clip, see <a href="/live/creating-video-clips.html">Creating a Video Clip Using the Live Module</a>.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: Streams are available for clipping for 7 days after the live event has ended.</aside>
   </section>
   <section class="bcls-section">
     <h2 id="trouble">Troubleshooting live stream issues</h2>
@@ -322,7 +283,6 @@ parent: Working with Live Events
       <li class="language-editable">Whether this stream worked correctly in the past</li>
       <li class="language-editable">The entry point URL you are using in your encoder</li>
       <li class="language-editable">The encoding software and hardware are you using</li>
-      <li class="language-editable">The URL to the player to which you have published the live event</li>
       <li class="language-editable">The video ID of your live asset in Video Cloud Studio</li>
       <li class="language-editable">The results of a trace-route from your encoder to the publishing point host</li>
     </ul>
