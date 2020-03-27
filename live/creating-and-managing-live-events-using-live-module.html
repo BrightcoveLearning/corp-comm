@@ -7,7 +7,7 @@ parent: Working with Live Events
   <summary>In this topic you will learn how to create and manage live events.</summary>
   <section class="bcls-section">
     <h2 id="introduction">Introduction</h2>
-    <p>The Live features in Brightcove Engage&trade; can be used to broadcast a live event to both Mobile App and Web experiences. After you create a live event, you will be provided with a set of encoder settings that you plug into your on-site encoder. All transcoding is done in the cloud so you don't need a hardware based transcoder. The live video can then be included when creating Mobile App and Web Experiences.</p>
+    <p>The live video features in Brightcove Engage&trade; can be used to broadcast a live event to both Mobile App and Web experiences. After you create a live event, you will be provided with a set of encoder settings that you plug into your on-site encoder. All transcoding is done in the cloud so you don't need a hardware based transcoder. The live video can then be included when creating Mobile App and Web Experiences.</p>
   </section>
   <section class="bcls-section">
     <h2 id="prerequisites">Prerequisites</h2>
@@ -63,8 +63,8 @@ parent: Working with Live Events
     <h2 id="create">Creating a new event</h2>
     <p>For a complete step-by-step guide to creating and streaming a live event, see:</p>
     <ul>
-      <li> <a href="/live/step-step-using-live-module-telestream-wirecast.html">Step-by-Step: Using the Live Module with Telestream Wirecast</a></li>
-      <li><a href="/live/step-step-using-live-module-open-broadcaster-software-obs.html">Step-by-Step: Using the Live Module with Open Broadcaster Software (OBS)</a></li>
+      <li> <a href="/live/step-step-using-live-streaming-telestream-wirecast.html">Step-by-Step: Live Streaming with Telestream Wirecast</a></li>
+      <li><a href="/live/step-step-using-live-streaming-open-broadcaster-software-obs.html">Step-by-Step: Live Streaming with Open Broadcaster Software (OBS)</a></li>
     </ul>
     <p>To create a new event, follow these steps.</p>
     <ol class="bcls-tasklist-restart">
@@ -106,47 +106,30 @@ parent: Working with Live Events
     <p>When creating a new event, advanced options can be configured. To configure the advanced options, click the <strong>ADVANCED OPTIONS</strong> link when creating the event.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/live-event-advanced-options.png" /></figure>
     <p>The following options can be configured:</p>
-    <aside class="bcls-aside bcls-aside--information"> For VOD clips, no notification will be sent.</aside>
-    <aside class="bcls-aside bcls-aside--information">Please contact Brightcove Support in the case you are interested in a custom edge CDN hostname.</aside>
     <ul>
-      <li class="language-editable"><strong>Create Cloud DVR</strong> - Enables DVR capability. If the event is published using a Brightcove Player version earlier than 6.33.0, the <a href="/node/18089">Live DVRUX Plugin</a> is required. Content is available for 7 days after the event finishes.
-        <ul>
-          <li class="language-editable"><strong>DVR Window</strong> - The amount of time, in seconds, to keep in the live DVR manifest.</li>
-        </ul>
-      </li>
-      <li class="language-editable"><strong>Input Format</strong> - The input format from the encoder that will be sent to the Live module. This feature enables additional metadata in a live stream like now, now-next, more flexibility in subtitles and captioning, audio tracks and enables streamlined digital experiences with standard broadcast level data. The following input formats are supported:
-        <ul>
-          <li class="language-editable"><strong>RTMP (default)</strong></li>
-          <li class="language-editable"><strong>Real-Time Transport Protocol (RTP)</strong></li>
-          <li class="language-editable"><strong>Secure Reliable Transport (SRT)</strong></li>
-        </ul>
-      </li>
-      <li class="language-editable"><strong>RTMP credentials to use</strong> - Select the RTMP credential used to secure the Streaming Endpoint. Note this option will only appear if the Input Format is RTMP and at least one RTMP credential was created as part of the <a href="/node/18588">Live settings</a>.</li>
-      <li class="language-editable"><strong>RTMP IP whitelist</strong> - Enter a set of IP addresses that are allowed to connect to the RTMP endpoint. This controls who can connect to the RTMP endpoint. Note this option will only appear if the Input Format is RTMP.</li>
-      <li class="language-editable"><strong>CIDR Whitelist</strong>&nbsp; - Enter a set of IP addresses that are allowed to connect to the RTP or SRT endpoint. This controls who can connect to the RTP or SRT endpoints. Note this option will only appear if the Input Format is RTP or SRT. </li>
       <li class="language-editable"><strong>Content Encryption</strong> - Select the type of encryption to apply to the live stream:
         <ul>
           <li class="language-editable"><strong>None</strong> - No encryption is applied</li>
           <li class="language-editable"><strong>AES-128</strong> - Secure the stream using AES-128 encryption. If this option is selected, you must enter your <strong>Encryption Key</strong>. The key must be 32 hexadecimal characters. For best results, use a <a href="https://www.allkeysgenerator.com/Random/Security-Encryption-Key-Generator.aspx">key generator</a>, choosing the <code>128-bit</code> and <code>Hex</code> options.
             <aside class="bcls-aside bcls-aside--information">Clips can't be created from encrypted live streams.</aside>
           </li>
-          <li class="language-editable"><strong>Digital Rights Management (DRM)</strong> - Secure Premium content stream with Digital Rights Management technologies. For details, see the <a href="node/18944">Live DRM</a> document.
-            <ul>
-              <li>HLS + <a href="https://developer.apple.com/streaming/fps/">FairPlay</a></li>
-              <li>HLS (fMP4) + Widevine Modular</li>
-            </ul>
-            <aside class="bcls-aside bcls-aside--information"> Your Live account must be enabled first by Brightcove Support in order to use DRM. To publish a DRM-enabled event, it is necessary to create and use a DRM enabled player v6.37.1 or greater.</aside>
-          </li>
         </ul>
       </li>
-      <li class="language-editable"><strong>Enable stream status notifications</strong> - When checked, enter a <strong>Notification URL</strong>. An http request will be made to the <strong>Notification URL</strong> when there is a change in the job status. This can be used to update a server in response to changes in the job status. For more information on using API notifications, see the <a href="/node/18448">Live API Notifications</a> topic.</li>
-      <li class="language-editable"><strong>+ Add multi CDN configuration</strong> - Enter a <strong>label</strong> and <strong>URL</strong> for additional CDNs. This is a whitelist of CDNs that are allowed to ask our primary CDN for the video segments. You are responsible for configuring the secondary CDN correctly.</li>
+      <li class="language-editable"> <strong>Input Format</strong> - The input format from the encoder that will be sent to  Brightcove Live. This feature enables additional metadata in a live stream like now, now-next, more flexibility in subtitles and captioning, audio tracks and enables streamlined digital experiences with standard broadcast level data. The following input formats are supported:
+        <ul>
+          <li class="language-editable"><strong>RTMP (default)</strong></li>
+          <li class="language-editable"><strong>Real-Time Transport Protocol (RTP)</strong></li>
+          <li class="language-editable"><strong>Secure Reliable Transport (SRT)</strong></li>
+        </ul>
+      </li>
+      <li class="language-editable"><strong>RTMP IP whitelist</strong> - Enter a set of IP addresses that are allowed to connect to the RTMP endpoint. This controls who can connect to the RTMP endpoint. Note this option will only appear if the Input Format is RTMP.</li>
+      <li class="language-editable"><strong>CIDR Whitelist</strong>&nbsp; - Enter a set of IP addresses that are allowed to connect to the RTP or SRT endpoint. This controls who can connect to the RTP or SRT endpoints. Note this option will only appear if the Input Format is RTP or SRT. </li>
+      <li class="language-editable"><strong>+ Add multi CDN configuration</strong> - Enter a <strong>label</strong> and <strong>URL</strong> for additional CDNs. This is a whitelist of CDNs that are allowed to ask our primary CDN for the video segments. You are responsible for configuring the secondary CDN correctly. </li>
     </ul>
-    <p>Click <strong>Edit Configuration </strong> to view/edit the API request that will be made to create the live stream. Caution should be used when editing the API call directly.</p>
   </section>
   <section class="bcls-section">
     <h2 id="controlroom">Viewing live event info using the Control Room</h2>
-    <p>The Control Room page is used to view information about a live event. When you create a new live event and streaming begins, the Control Room page will open displaying the event information. A preview of the event will appear in the preview player. The Control Room page is also displayed when you click on an event on the Manage Live Events page. Click  <strong>Reporting</strong> in the left navigation  to <a href="#report">view reporting information</a> while the stream is in progress.</p>
+    <p>The Control Room page is used to view information about a live event. When you create a new live event and streaming begins, the Control Room page will open displaying the event information. A preview of the event will appear in the preview player. The Control Room page is also displayed when you click on an event on the Manage Live Events page. Click <strong>Reporting</strong> in the left navigation  to <a href="#report">view reporting information</a> while the stream is in progress.</p>
     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/control-room.png" /></figure>
     <p>The Control Room page <strong>Event Information</strong> tab is organized into the following sections:</p>
     <ul>
@@ -160,9 +143,9 @@ parent: Working with Live Events
       <p>The Event Information section displays the following information:</p>
       <ul>
         <li class="language-editable"><strong>Event Name</strong> - Name of the event</li>
-        <li class="language-editable"><strong>Short Description</strong></li>
-        <li class="language-editable"><strong>Tags</strong> - </li>
-        <li class="language-editable"><strong>Reference ID</strong></li>
+        <li class="language-editable"><strong>Short Description</strong> - Short description of the event</li>
+        <li class="language-editable"><strong>Tags</strong> - Tags to associate with the event. Tags faciliate searching and can be used when creating Smart playlists.</li>
+        <li class="language-editable"><strong>Reference ID</strong> - Internal reference ID for the event (not used)</li>
         <li class="language-editable"><strong>Streaming to Social Media</strong> - If <strong>Allowed</strong>, the live event can be assigned to a scheduled social event</li>
         <li class="language-editable"><strong>Digital Rights Management (DRM)</strong> - </li>
         <li class="language-editable"><strong>Playback URL</strong> - URL that can be used to view the live stream in a non-Brightcove Player</li>
@@ -175,25 +158,38 @@ parent: Working with Live Events
         <li class="language-editable"><strong>Job ID</strong> - Internal job ID</li>
         <li class="language-editable"><strong>Video ID</strong></li>
         <li class="language-editable"><strong> Endpoint (RTMP URL</strong>) - Streaming endpoint used by the encoder</li>
-        <li class="language-editable"><strong>Stream Name</strong> - Stream name used by the encoder</li>
+        <li class="language-editable"><strong> Name</strong> - Stream name used by the encoder</li>
         <li class="language-editable"><strong>Region</strong> - Streaming region</li>
-        <li class="language-editable"><strong>Playback URL</strong> - URL that can be used to view the live stream in a non-Brightcove Player</li>
-        <li class="language-editable"><strong>Status</strong></li>
+        <li class="language-editable"><strong>Status</strong> - Current job status
+          <ul>
+            <li><strong>Streaming</strong> - Stream is live</li>
+            <li><strong>Processing Error</strong> - The live stream has encountered an error</li>
+            <li><strong>Standby</strong> - Stream ready to be activated (static entry points only)</li>
+            <li><strong>Stopping</strong> - The live stream is stopping and creating any associated VOD outputs</li>
+            <li><strong>Completed</strong> - Live stream has completed</li>
+            <li><strong>Cancelling</strong> - The live stream is stopping and will NOT process any pending VOD outputs</li>
+            <li><strong>Cancelled</strong> - The live stream has been cancelled</li>
+            <li><strong>Disconnected</strong> - The encoder has been disconnected</li>
+            <li><strong>Waiting</strong> - Waiting for the RTMP stream (encoder to start)</li>
+            <li><strong>Failed</strong> - The job has stopped as a result of a system error</li>
+          </ul>
+        </li>
       </ul>
-        </div>
+    </div>
     <div>
       <h3 id="clips">Clips</h3>
       <p>The Clips section displays all of the clips that were created from the live stream. Clicking the clip name will open the clip on the <strong>Videos</strong> page. For information on creating a clip, see <a href="/live/creating-video-clips.html">Creating Video Clips</a>.</p>
     </div>
     <div>
       <h3 id="monitor">Monitor</h3>
-      <p>The Monitor section displays <span class="bcls-aside bcls-aside--information"> the Output and Input Drift graphs</span>. Click the <strong>Retrieve updated data and graphs</strong> link to view the information.</p>
+      <p>The Monitor section displays <span class="bcls-aside bcls-aside--information"> the Output and Input Drift graphs</span>. Click the <strong>Retrieve updated data and graphs</strong> link to view the information. Output Drift measures the healthiness of the stream. Output Drift is defined as the difference between the wall clock vs. stream timestamps (TS). In live streaming, ideally, the wall clock should run at the same pace as stream TS, if the stream TS arrives slower than real time this means that there is a problem (bottleneck) in the system.</p>
+      <p>Input Drift measures the health of the input stream and is defined as the difference from the input timestamp and the real time clock.</p>
       <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/monitor.png" /></figure>
     </div>
   </section>
   <section class="bcls-section">
     <h2 id="report">Event reporting</h2>
-    <p>Click  <strong>Reporting</strong> in the left navigation to view live event information. The reporting information is available while an event is in progress and for up to 1 hour after the event ends.</p>
+    <p>Click <strong>Reporting</strong> in the left navigation to view live event information. The reporting information is available while an event is in progress and for up to 1 hour after the event ends.</p>
     <p>The reporting page will display a live event snapshot with the following information:</p>
     <ul>
       <li><strong>Total Views</strong> - </li>
@@ -217,7 +213,7 @@ parent: Working with Live Events
   </section>
   <section class="bcls-section">
     <h2 id="clip">Creating a clip</h2>
-    <p>Clips can be created while the event is in progress or after the event has ended. If clips can't be created, a message will appear when hovering over <strong>Create Clip</strong> in the left navigation. For information on creating a clip, see <a href="/live/creating-video-clips.html">Creating a Video Clip Using the Live Module</a>.</p>
+    <p>Clips can be created while the event is in progress or after the event has ended. If clips can't be created, a message will appear when hovering over <strong>Create Clip</strong> in the left navigation. For information on creating a clip, see <a href="/live/creating-video-clips.html">Creating Video Clips</a>.</p>
     <aside class="bcls-aside bcls-aside--information">Note: Streams are available for clipping for 7 days after the live event has ended.</aside>
   </section>
   <section class="bcls-section">
@@ -228,7 +224,7 @@ parent: Working with Live Events
       <li class="language-editable">Whether this stream worked correctly in the past</li>
       <li class="language-editable">The entry point URL you are using in your encoder</li>
       <li class="language-editable">The encoding software and hardware are you using</li>
-      <li class="language-editable">The video ID of your live asset in Video Cloud Studio</li>
+      <li class="language-editable">The video ID of your live asset in Brightcove Engage&trade;</li>
       <li class="language-editable">The results of a trace-route from your encoder to the publishing point host</li>
     </ul>
   </section>
