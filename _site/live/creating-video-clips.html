@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Step-by-Step: Using the Live Module with Telestream Wirecast</title>
+  <title>Creating Video Clips</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -86,9 +86,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/live/">get-started</a></li>
+      <li class="breadcrumb-item"><a href="/live/">Working with Live Events</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Step-by-Step: Using the Live Module with Telestream Wirecast</li>
+      <li class="breadcrumb-item active" aria-current="page">Creating Video Clips</li>
     </ol>
   </nav>
 </header>
@@ -104,6 +104,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
             
               <h5 class="submenu-header"><a href="/get-started/">Getting Started <strong>+</strong></a></h5>            
               <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/brightcove-engage-system-requirements.html">Brightcove Engage System Requirements</a></li>
+                  
                 
                   
                     <li><a href="/get-started/brightcove-engage-training-videos.html">Brightcove Engage Training Videos</a></li>
@@ -364,176 +368,288 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 </div>
 
 <article class="bcls-article">
-  <h1>Step-by-Step: Using the Live Module with Telestream Wirecast</h1>
-  <summary>The purpose of this Quick Start is to show you how to use the Video Cloud Live module and Telestream Wirecast to create a live event.</summary>
+  <h1>Creating Video Clips</h1>
+  <summary>In this topic you will learn how to create a video clip from a live event.</summary>
   <section class="bcls-section">
-
-    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="2403492012001">&nbsp;</div>
-    <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
-
-
-    <p>To learn about all of the features and functionality available in the Live module, see <a href="/general/creating-and-managing-live-events-using-live-module.html">Creating and Managing Live Events using the Live Module</a>. For a series of best practices and recommendations to help ensure a high quality, stable live streaming experience, see <a href="/node/13289">Live Module Guidelines and Best Practices</a>. For a list of all the options available from Brightcove for delivering live streaming video, see <a href="/node/11397">Delivering Live Streams</a>.</p>
-    <aside class="bcls-aside bcls-aside--information"> Note: For a version of this document that uses the OBS encoder, see <a href="/get-started/step-step-using-live-module-open-broadcaster-software-obs.html">Step-by-Step: Using the Live Module with Open Broadcaster Software (OBS)</a>.</aside>
-    <aside class="bcls-aside bcls-aside--information"> Note: Live streaming support is available only for Video Cloud Pro and Enterprise publishers.</aside>
-    <p>After completing this Quick Start, you should be able to:</p>
-    <ul>
-      <li class="language-editable">Use the Video Cloud Live module to create a live event</li>
-      <li class="language-editable">Configure your encoder for a live event</li>
-      <li class="language-editable">Trim your event and save it as a VOD asset in your Video Cloud account</li>
-    </ul>
-    </aside>
-    <p>This Quick Start will help you broadcast a live event to different devices using Telestream Wirecast. A free trial is available on the <a href="https://www.telestream.net/controls/wirecast/download-wirecast.htm">Telestream site</a>. Other encoders can also be used with the Live module.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="audience">Audience</h2>
-    <p>Any Video Cloud publisher who needs to broadcast a live streaming event using the Video Cloud Live module.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="prereq">Prerequisites</h2>
-    <ul>
-      <li class="language-editable">A Video Cloud Pro or Enterprise account with access to the Live module</li>
-      <li class="language-editable">A camera to broadcast the event</li>
-      <li class="language-editable">You must have your own encoding software; this Quick Start uses <a href="https://www.telestream.net/controls/wirecast/download-wirecast.htm">Telestream Wirecast</a> which can be downloaded for free (see a list of <a href="https://app.zencoder.com/docs/guides/encoding-settings/using-live-streaming#supported-encoders">supported encoders</a>)</li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="limitations">Limitations</h2>
-    <ul>
-      <li class="language-editable">Your encoder must output an RTMP stream</li>
-      <li class="language-editable">Live broadcasts will experience a 20-30 second delay</li>
-      <li class="language-editable">Streaming must begin within 30 minutes of the event start (default-level account setting)</li>
-      <li class="language-editable">For users using Internet Explorer, version 10 or later is required</li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="steps">Steps to broadcast a live event</h2>
-    <p>To stream your live event using the Live module, you will complete the following tasks:</p>
-    <ul>
-      <li class="language-editable"><a href="#liveapp">Create a new event using the Video Cloud Live module</a></li>
-      <li class="language-editable"><a href="#encoder">Configure your encoder</a></li>
-      <li class="language-editable"><a href="#publish">Publish the live stream</a></li>
-      <li class="language-editable"><a href="#clip">Create a clip from the live event</a></li>
-    </ul>
-  </section>
-  <section class="bcls-section">
-    <h2 id="steps">Creating a new live event</h2>
-    <ol class="bcls-tasklist-restart">
-      <li class="language-editable">In a browser window, navigate to <a href="https://studio.brightcove.com">Video Cloud Studio</a>.</li>
-      <li class="language-editable">Enter your Video Cloud login credentials and click<strong> Sign In.</strong></li>
-      <li class="language-editable">The current Video Cloud account name will appear in the upper right corner of the page. If you have multiple accounts, click the account selector drop down and select the account you would like to save the live asset in. If you select an account that has not been enabled for Live, the Live module will open in trial mode.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10820/node10820-account-selector.png" /></figure>
-      </li>
-      <li class="language-editable">Click <strong> Live</strong> in the navigation header.</li>
-      <li class="language-editable">Click the <strong>Create Event</strong> button to create a new event.</li>
-      <li class="language-editable">Enter an <strong>Event Name</strong>.</li>
-      <li class="language-editable">Enter some <strong>Tags</strong> for the event.</li>
-      <li class="language-editable">If your account has been configured with required custom fields, make sure the custom fields are assigned values.</li>
-      <li class="language-editable">Select a <strong>Live Ingest Profile</strong> from the dropdown list. The live ingest profile controls the number and quality of live renditions that are created.</li>
-      <li class="language-editable">Select <strong>Convert event to video asset when complete</strong>. This will save the event as a video in the Media module.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10820/node10820-create-live-event.png" /></figure>
-      </li>
-      <li class="language-editable">Click the <strong>ADVANCED OPTIONS</strong> link to expand the advanced options.</li>
-      <li class="language-editable">Set the <strong>Reconnect Time</strong> to 1 minute.</li>
-      <li class="language-editable">Select the <strong>Region</strong> closest to your location.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10820/node10820-adv-options.png" /></figure>
-      </li>
-      <li class="language-editable">Click <strong>Create Event</strong>. The Live module will return a <strong>Stream Endpoint (RTMP URL) </strong> and <strong>Stream Name</strong>. These values will be used in the encoder settings.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10820/node10820-encoder-settings1.png" /></figure>
-      </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="encoder">Configuring your encoder</h2>
-    <p>In this section, we will configure and use the Telestream Wirecast encoder to support a live streaming event. Telestream Wirecast software is a desktop application that captures input from your camera and produces a stream that can be delivered by a CDN. Note that there are hardware and other software based encoding solutions available that may be better suited for delivering your live streaming event. You can download a trial version of the Wirecast software from the <a href="https://www.telestream.net/controls/wirecast/download-wirecast.htm">Telestream website</a>.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: You should have the Wirecast software installed and a camera connected to your computer before proceeding</aside>
-    <aside class="bcls-aside bcls-aside--information">Note: This example uses a DSLR connected to a laptop using the Blackmagic Design UltraStudio Mini Recorder.</aside>
-    <aside class="bcls-aside bcls-aside--information">Note: Wirecast offers the ability to record a local copy of the stream. By choosing to do this, you will have a local copy of the stream that you can create clips from in case any networking issues occur during the broadcast of the event. For information on how to record a local file, see the <a href="http://telestream.force.com/kb/articles/Knowledge_Article/Record-to-Disk">Wirecast documentation</a>.</aside>
-    <p>This example uses a DSLR connected to a laptop using the Blackmagic Design UltraStudio Mini Recorder.</p>
-    <ol class="bcls-tasklist-restart">
-      <li class="language-editable">Open Wirecast.</li>
-      <li class="language-editable">Click <strong>+</strong> and select <strong>Video Capture</strong>.</li>
-      <li class="language-editable">Select your camera from the list. Click <strong>Add</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10820/node10820-add-camera.png" /></figure>
-      </li>
-      <li class="language-editable">Confirm that the selected video source appears in the preview pane.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10820/node10820-live-shot.png" /></figure>
-      </li>
-      <li class="language-editable">Click the arrow button (<img alt="" src="/assets/images/get-started/10820/node10820-arrow-button.png" />) to make the camera shot the live shot.</li>
-      <li class="language-editable">Click the stream button (<img alt="" src="/assets/images/get-started/10820/node10820-stream-button.png" />). You will be prompted to enter the Output Settings.</li>
-      <li class="language-editable">Set the <strong>Output Destination</strong> to <strong>RTMP Server</strong>. Click <strong>OK</strong>.</li>
-      <li class="language-editable">For the <strong>Address</strong>, use the <strong>Stream URL</strong> provided by the Live module.</li>
-      <li class="language-editable">For the <strong>Stream</strong>, use <strong>alive</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10820/node10820-output-settings.png" /></figure>
-      </li>
-      <li class="language-editable">Click the stream button (<img alt="" src="/assets/images/get-started/10820/node10820-stream-button.png" />). The live stream should begin.</li>
-    </ol>
-    <aside class="bcls-aside bcls-aside--information">Note: It will take about a minute to process your streams.</aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="publish">Publishing the live event</h2>
-    <p>To generate the embed code for the live event, follow these steps:</p>
-    <ol class="bcls-tasklist-restart">
-      <li class="language-editable">Return to the Live module.</li>
-      <li class="language-editable">If the Control Room page for the event is not displayed, click the <strong>Live</strong> tab to display a list of live events. Click on the event name to open the Control Room page.</li>
-      <li class="language-editable">Confirm that you can see the live stream. Note that after starting the encoder, it may take a minute for the live stream to appear.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10820/node10820-control-room.png" /></figure>
-      </li>
-      <li class="language-editable">Click <strong>Publish and Embed</strong>.</li>
-      <li class="language-editable">Select a <strong>Player</strong> and then click the <strong>Player URL</strong> to view the live stream.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10820/node10820-embed-code.png" /></figure>
-      </li>
-      <li class="language-editable">When you are done with the live stream, click the <strong>Stop Stream</strong> button in the Live module. Also, return to Wirecast and click the stream button to stop the encoder from streaming.
-        <aside class="bcls-aside bcls-aside--information">Note: It is important to make sure you close/stop your encoder when the live stream is complete. Leaving a connection open between any encoder and Brightcove, even when no data is being sent, may result in unexpected connection charges.</aside>
-      </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="clip">Creating a clip</h2>
-    <p>The Live module provides the ability to create video clips from completed events. Clips can also be created while a live event is in progress. There are several reasons you might want to create a clip:</p>
+    <h2 id="Overview">Overview</h2>
+    <p>Brightcove Engage&trade; provides the ability to create video clips from live events that are in progress and completed live events. There are several reasons you might want to create a clip:</p>
     <ul>
       <li class="language-editable">To create a short, teaser clip that can be posted to social media</li>
       <li class="language-editable">To limit the length of a video that you want to post (most platforms limit the length of videos)</li>
       <li class="language-editable">You have found that shorter videos perform better on social media</li>
     </ul>
-    <p>Clips can only be created within 7 days of the event end. Afterwards, the <strong>Create Clip</strong> button will be disabled. If the event is longer than 24 hours, only the last 24 hours are clippable.</p>
-    <aside class="bcls-aside bcls-aside--information">Note: For complete details on using the clipping interface, see <a href="/node/18551">Creating a Video Clip Using the Live Module</a>.</aside>
-    <p>To create a clip, follow these steps:</p>
-    <ol class="bcls-tasklist-restart">
-      <li class="language-editable">Return to the Live module.</li>
-      <li class="language-editable">Click the <strong>Completed</strong> tab.</li>
-      <li class="language-editable">Locate the event and click the event name to open the Control Room.</li>
-      <li class="language-editable">Click <strong>Create Clip</strong>. The clipping editor will open.</li>
-      <li class="language-editable">Click and drag the clipping handles (<img alt="" src="/assets/images/get-started/10820/node10820-clip-handle.png" />)on the focus timeline to set the start and end points for the clip.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10820/node10820-clip-start-end.png" /></figure>
-      </li>
-      <li class="language-editable">Click <strong>Preview Clip</strong> to preview the clip. The start and end points can be adjusted as needed.</li>
-      <li class="language-editable">Click <strong>Save Clip</strong>.</li>
-      <li class="language-editable">Enter a <strong>Clip Name</strong> and other metadata values. Any required fields for the account will also appear and should be assigned values.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10820/node10820-clip-metadata.png" /></figure>
-      </li>
-      <li class="language-editable">Click <strong>Create Clip</strong>. The ingestion process will begin and the clip will be saved to your Video Cloud account.</li>
-      <li class="language-editable">Clips will appear below the clip editor. Click <strong>Publish to Social</strong> to publish the clip to one of your social destinations using Brightcove Social. For information on publishing videos using the Social module, see <a href="/node/16344">Publishing Videos to Social Media Platforms</a>.</li>
-      <li class="language-editable">Click the <strong>Back to Control Room: Completed</strong> breadcrumb. All clips will also appear in the Control Room for the event.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10820/node10820-clips-section.png" /></figure>
-        &nbsp;
-        <aside class="bcls-aside bcls-aside--information">Note: You can click the Create Clip button multiple times to create multiple clips of your broadcast. This allows you to trim and save as many times as you want for each broadcast, saving the clips as separate VOD assets in your media library.</aside>
-      </li>
-    </ol>
-  </section>
-  </section>
-  <section class="bcls-section">
-    <h2 id="troubleshoot">Troubleshooting live stream issues</h2>
-    <p>If you need further help getting your live event to work, you can <a href="https://support.brightcove.com/en/contact/create">contact us</a>. To make sure you get the fastest response possible, below is a list of what support will need to solve the problem.</p>
+    <h3>Notes</h3>
     <ul>
-      <li class="language-editable">The specific symptoms the stream is having. For example, does it not play at all or does it stutter or freeze?</li>
-      <li class="language-editable">Whether this stream worked correctly in the past</li>
-      <li class="language-editable">The entry point URL you are using in your encoder</li>
-      <li class="language-editable">The encoding software and hardware are you using</li>
-      <li class="language-editable">The URL to the player to which you have published the live event</li>
-      <li class="language-editable">The video ID of your live asset in Video Cloud Studio</li>
-      <li class="language-editable">The results of a trace-route from your encoder to the publishing point host</li>
+      <li class="language-editable">Clips can only be created within 7 days of the event end. Afterwards, the <strong>Create Clip</strong> button will be disabled.</li>
+      <li class="language-editable">Clipping is not supported on all browsers.</li>
+      <li class="language-editable">Clips will be frame-accurate <strong>provided that the encoder is sending SMPTE timecodes for the stream</strong> - otherwise, they will be accurate within a couple of frames. Note that to provide clips as quickly as possible, a segment-accurate clip is first created, and replaced by a frame-accurate clip as soon as it is available.</li>
+      <li class="language-editable">Clips with a start time less than 10 seconds into the stream cannot be created.</li>
+      <li class="language-editable">Media sharing will fail for videos created by clipping Live streams.</li>
+      <li class="language-editable">Clips cannot be created from AES encrypted live streams.</li>
     </ul>
   </section>
+  <section class="bcls-section">
+    <h2 id="Navigating_the_clip_editor">Navigating the clip editor</h2>
+    <p>To open the clip editor, click <strong>Live</strong> in the navigation header, click on an event name and then click <strong>Create Clip</strong> in the left navigation. The clip editor will open.</p>
+    <p>Note that all times in the clipping interface are based around the UTC time that the video data was received by Brightcove.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/clip-editor-numbered.png" /></figure>
+    <p>The clip editor is organized as follows:</p>
+    <ul>
+      <li class="language-editable">A - <a href="#preview">Preview player</a></li>
+      <li class="language-editable">B - <a href="#playback_control">Playback control buttons</a></li>
+      <li class="language-editable">C - <a href="#clip_time">Clip time</a></li>
+      <li class="language-editable">D - <a href="#clipping">Clipping buttons</a></li>
+      <li class="language-editable">E - <a href="#preview_clip">Preview clip button</a></li>
+      <li class="language-editable">F - <a href="#create">Save button</a></li>
+      <li class="language-editable">G - <a href="#playhead">Playhead</a></li>
+      <li class="language-editable">H - <a href="#focus_timeline">Focus timeline</a></li>
+      <li class="language-editable">I - <a href="#context_timeline">Context timeline</a></li>
+      <li class="language-editable">J - <a href="#zoom_buttons">Zoom buttons</a></li>
+      <li class="language-editable">K - <a href="#list_of_clips">List of clips</a></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Creating_a_clip">Creating a clip</h2>
+    <p>Follow these steps to create a clip.</p>
+    <ol class="bcls-tasklist-restart">
+      <li class="language-editable">Using the clipping buttons or shortcut keys, set the start and end points for the clip.
+        <figure><img class="bcls-image--no-border" alt="" src="/assets/images/live/clip-portion.png" /></figure>
+      </li>
+      <li class="language-editable">Click <strong>Save</strong>.</li>
+      <li class="language-editable">Enter the clip video properties.
+        <ul>
+          <li class="language-editable"><strong>Clip Name</strong> - Name of the clip</li>
+          <li class="language-editable"><strong>Short Description</strong> - Description of the clip</li>
+          <li class="language-editable"><strong>Tags</strong> - Tags to associate with the clip</li>
+          <li class="language-editable"><strong>Reference ID</strong> - Reference ID to assign to the clip
+            <figure><img class="bcls-image--no-border" alt="" src="/assets/images/live/create-clip.png" /></figure>
+          </li>
+        </ul>
+        <p>Any required custom fields will also be displayed.</p>
+      </li>
+      <li class="language-editable">Click <strong>Create Clip</strong>. The processing for the clip will begin.</li>
+    </ol>
+    <p>A list of all clips will appear below the clip editor. Clicking the <strong>Clip Name</strong> will open the clip in the Media module in another browser tab. Click <strong>Publish to Social</strong> to open the clip in the social module to publish it to a social media account. For information on publishing videos using the Social module, see <a href="/node/16344">Publishing Videos to Social Media Platforms</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Preview_player">Preview player</h2>
+    <p>The preview player is used to preview the clip. When the event is in progress and the clip editor is opened, the clip will begin to play from the "safe live point" which is approximately 3 segments before the end. Note that not all browsers support autoplay.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Playback_control_buttons">Playback control buttons</h2>
+    <p>The playback control buttons are used to control to playback of the clip inside of the preview player.</p>
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th width="107">Button</th>
+          <th width="430">Description</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><img alt="" src="/assets/images/live/start-button.png" /></td>
+          <td>Starts video playback at the beginning of the source video</td>
+        </tr>
+        <tr>
+          <td><img alt="" src="/assets/images/live/back15-button.png" /></td>
+          <td>Jumps the playhead back 15 seconds</td>
+        </tr>
+        <tr>
+          <td><img alt="" src="/assets/images/live/play-button.png" /></td>
+          <td>Starts video playback from the playhead position</td>
+        </tr>
+        <tr>
+          <td><img alt="" src="/assets/images/live/forward15-button.png" /></td>
+          <td>Jumps the playhead forward 15 seconds</td>
+        </tr>
+        <tr>
+          <td><img alt="" src="/assets/images/live/live-button.png" /></td>
+          <td>Jump to Live</td>
+        </tr>
+        <tr>
+          <td><img alt="" src="/assets/images/live/end-button.png" /></td>
+          <td>Jump to end</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Clip_time">Clip time</h2>
+    <p>The clip time displays the current UTC time for the playhead and the clippable time. Clicking on the UTC link will switch to the local time display.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/clip-time.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Clipping_buttons">Clipping buttons</h2>
+    <p>The clipping buttons are used to clip the desired portion of the source video.</p>
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th width="124">Button</th>
+          <th width="709">Description</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><img alt="" src="/assets/images/live/go-cue-in-button.png" /></td>
+          <td>Jumps to cue in point of the video</td>
+        </tr>
+        <tr>
+          <td><img alt="" src="/assets/images/live/set-cue-in-button.png" /></td>
+          <td>Sets the starting point of the clip. The start point can also be set by dragging the handle at the beginning of the focus timeline.</td>
+        </tr>
+        <tr>
+          <td><img alt="" src="/assets/images/live/set-cue-out-button.png" /></td>
+          <td>Sets the ending point of the clip. The end point can also be set by dragging the handle at the end of the focus timeline.</td>
+        </tr>
+        <tr>
+          <td><img alt="" src="/assets/images/live/go-cue-out-button.png" /></td>
+          <td>Jumps to the cue out point of the video</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The cue in and cue out points are the start and end of a clip. Each of these points is represented on the focus timeline with a draggable handle, and the time between the points is filled-in green. The points are also represented in the context timeline as the left and right edges of the green rectangle indicating the clip space.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/cue-in-out-example.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Preview clip">Preview clip</h2>
+    <p>Click the preview clip button to play the clip.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/preview-clip-button.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Playhead">Playhead</h2>
+    <p>The playhead is an indicator of where in time the player is playing. The playhead is represented in the focus timeline by a red line with a red circle on top and with a red vertical line in the context timeline.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/playhead.png" /></figure>
+    <p>On the focus timeline, the playhead may be dragged to scrub through the video. Double-clicking on the focus timeline will move the playhead to that point. The playhead can also be used to set cue in and cue out points using the cue-in/cue-out buttons or by using the keyboard shortcuts.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Focus_timeline">Focus timeline</h2>
+    <p>The focus timeline is the top timeline in the interface.</p>
+    <p>The playhead is an indicator of where in time the player is playing. The playhead is represented in the focus timeline by a red line with a red circle on top.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/focus-timeline.png" /></figure>
+    <p>&nbsp;</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Context_timeline">Context timeline</h2>
+    <p>The context timeline is the bottom timeline in the clip editor. The context timeline shows the entire duration of the video, regardless of zoom level, the selected area of the clip, the location of the playhead, and the current focus viewport. The timeline is indicated with a red line.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/context-timeline.png" /></figure>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Zoom_buttons">Zoom buttons</h2>
+    <p>The zoom buttons are used to zoom in or out on the focus timeline.</p>
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Button</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><img alt="" src="/assets/images/live/zoom-in-button.png" /></td>
+          <td>Zooms in the focus timeline. The focus viewport (white box) in the context timeline will show the area of the clip that is being displayed in the focus timeline.</td>
+        </tr>
+        <tr>
+          <td><img alt="" src="/assets/images/live/zoom-out-button.png" /></td>
+          <td>Zooms out the focus timeline. The focus viewport (white box) in the context timeline will show the area of the clip that is being displayed in the focus timeline.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="List_of_clips">List of clips</h2>
+    <p>A list of clips will appear below the clip editor. Click <strong>Publish to Social</strong> to publish the clip to one of your social destinations using Brightcove Social. For information on publishing videos using the Social module, see <a href="/node/16344">Publishing Videos to Social Media Platforms</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Keyboard_shortcuts">Keyboard shortcuts</h2>
+    <p>Keyboard shortcuts can also be used to play and create a clip from the video. The following keyboard shortcuts are available.</p>
+    <h3>Playback controls</h3>
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th width="234">Press this key</th>
+          <th width="639">To do this</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><code>space, k, down</code></td>
+          <td>Play / Pause</td>
+        </tr>
+        <tr>
+          <td><code>I</code></td>
+          <td>Go to cue-in</td>
+        </tr>
+        <tr>
+          <td><code>O</code></td>
+          <td>Go to cue-out</td>
+        </tr>
+        <tr>
+          <td><code>p</code></td>
+          <td>Play preview</td>
+        </tr>
+        <tr>
+          <td><code>j, left</code></td>
+          <td>Jump back 1 frame</td>
+        </tr>
+        <tr>
+          <td><code>J, shift + left</code></td>
+          <td>Jump 1 second back</td>
+        </tr>
+        <tr>
+          <td><code>l, right</code></td>
+          <td>Jump 1 frame forward</td>
+        </tr>
+        <tr>
+          <td><code>L, shift + right</code></td>
+          <td>Jump 1 second forward</td>
+        </tr>
+        <tr>
+          <td><code>s</code></td>
+          <td>Jump to start</td>
+        </tr>
+        <tr>
+          <td><code>e</code></td>
+          <td>Jump to end / live</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Timeline controls</h3>
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th width="234">Press this key</th>
+          <th width="639">To do this</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><code>i</code></td>
+          <td>Set cue-in</td>
+        </tr>
+        <tr>
+          <td><code>o</code></td>
+          <td>Set cue-out</td>
+        </tr>
+        <tr>
+          <td><code>+</code></td>
+          <td>Zoom in</td>
+        </tr>
+        <tr>
+          <td><code>-</code></td>
+          <td>Zoom out</td>
+        </tr>
+        <tr>
+          <td><code>u</code></td>
+          <td>Pan timeline to playhead</td>
+        </tr>
+        <tr>
+          <td><code>?</code></td>
+          <td>Open help modal</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script> 
 </article>
 
 <!-- complete bootstrap layout -->
@@ -551,7 +667,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 13 Mar 2020
+  Page last updated on 26 Mar 2020
 </div>
 
 <footer class="bcls-footer" role="contentinfo">

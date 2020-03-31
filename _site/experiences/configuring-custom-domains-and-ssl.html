@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- remember to remove the following line when the site is ready to go live -->
   <!-- <meta name="robots" content="noindex" /> -->
-  <title>Step-by-Step: Using the Live Module with Open Broadcaster Software (OBS)</title>
+  <title>Configuring Custom Domains and SSL</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -86,9 +86,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/live/">get-started</a></li>
+      <li class="breadcrumb-item"><a href="/experiences/">Experiences</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">Step-by-Step: Using the Live Module with Open Broadcaster Software (OBS)</li>
+      <li class="breadcrumb-item active" aria-current="page">Configuring Custom Domains and SSL</li>
     </ol>
   </nav>
 </header>
@@ -104,6 +104,10 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
             
               <h5 class="submenu-header"><a href="/get-started/">Getting Started <strong>+</strong></a></h5>            
               <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/brightcove-engage-system-requirements.html">Brightcove Engage System Requirements</a></li>
+                  
                 
                   
                     <li><a href="/get-started/brightcove-engage-training-videos.html">Brightcove Engage Training Videos</a></li>
@@ -364,216 +368,83 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 </div>
 
 <article class="bcls-article">
-  <h1>Step-by-Step: Using the Live Module with Open Broadcaster Software (OBS)</h1>
-  <summary>The purpose of this Quick Start is to show you how to use the Video Cloud Live module and Open Broadcaster Software (OBS) to broadcast a live event.</summary>
+  <h1>Configuring Custom Domains and SSL</h1>
+  <summary>In this topic you will learn how to configure custom domains and SSL for a Web Experience.</summary>
   <section class="bcls-section">
-
-
-<div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="5810369213001">&nbsp;</div>
-<script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
-
-<p>To learn about all of the features and functionality available in the Live module, see <a href="/general/creating-and-managing-live-events-using-live-module.html">Creating and Managing Live Events using the Live Module</a>. For a series of best practices and recommendations to help ensure a high quality, stable live streaming experience, see <a href="/node/13289">Live Module Guidelines and Best Practices</a>. For a list of all the options available from Brightcove for delivering live streaming video, see <a href="/node/11397">Delivering Live Streams</a>.</p>
-
-<aside class="bcls-aside bcls-aside--information">Note: For a version of this document that uses the Telestream Wirecast encoder, see <a href="/get-started/step-step-using-live-module-telestream-wirecast.html">Step-by-Step: Using the Live Module with Telestream Wirecast</a>.</aside>
-
-<aside class="bcls-aside bcls-aside--information">Note: Live streaming support is available only for Video Cloud Pro and Enterprise publishers.</aside>
-
-
-<p>After completing this Quick Start, you should be able to:</p>
-
-<ul>
-	<li>Use the Video Cloud Live module to create a live event</li>
-	<li>Configure your encoder for a live event</li>
-	<li>Trim your event and save it as a VOD asset in your Video Cloud account</li>
-</ul>
-<p>This Quick Start will help you broadcast a live event to different devices using Open Broadcaster Software (OBS) Studio. OBS is open source software for video recording and live streaming and can be <a href="https://obsproject.com">downloaded here</a>. Other encoders can also be used with the Live module.</p>
+    <p>When you first create a Web Experience, it is assigned a random domain with the format of <code>&lt;site-slug&gt;.bcvp0rtal.com </code>. For example, <code>http://site-148393.bcvp0rtal.com</code>. When the experience is published, viewers will be able to access the site at this domain. Brightcove Engage provides the ability to publish Web Experiences at a Brightcove provided domain or at your own custom domain.</p>
+    <p>Web Experiences can also be assigned to multiple URLs allowing publishers to use the same site for different functions without having to duplicate the site. For example, if you have a video site you want to use in a campaign and as your main video portal, you can brand different URLs and assign them all to the same site. No site duplication is needed and you can easily delete URLs when they are no longer needed.</p>
+    <aside class="bcls-aside bcls-aside--information">Note: When working with SSL certificates, do not under any circumstances share your private key or send it to Brightcove Support.</aside>
   </section>
-
   <section class="bcls-section">
-<h2 id="audience">Audience</h2>
-
-<p>Any Video Cloud publisher who needs to broadcast a live streaming event using the Video Cloud Live module.</p>
+    <h2 id="bcdomain">Using a Brightcove provided domain</h2>
+    <p>Brightcove provided domains allow you to quickly and easily create a domain for your Web Experience without having to work with your IT department to create a custom CNAME or register a new domain name with a registrar. They’re available "out of the box" and can be implemented with a click of a button. The available domains are:</p>
+    <ul>
+      <li>brightcovegallery.com</li>
+      <li>gallery.video</li>
+      <li>bcvp0rtal.com (which is assigned to Web Experiences by default)</li>
+    </ul>
+    <p>All of them support SSL. To access the SSL site, just add https to the URL. For example, <code>https://marquee.brightcovegallery.com </code></p>
   </section>
-
   <section class="bcls-section">
-<h2 id="prereq">Prerequisites</h2>
-
-<ul>
-	<li>A Video Cloud Pro or Enterprise account with access to the Live module</li>
-	<li>A camera to broadcast the event</li>
-	<li>You must have your own encoding software; this Quick Start uses <a href="https://obsproject.com">OBS Studio</a> which can be downloaded for free (see a list of <a href="https://app.zencoder.com/docs/guides/encoding-settings/using-live-streaming#supported-encoders">supported encoders</a>)</li>
-</ul>
+    <h2 id="puburl">Using a custom domain (publisher registered)</h2>
+    <p>Web Experiences can also be hosted on your own custom domain that you register. This allows you to brand the URL and keep it consistent with your current website/URL naming construct. This requires you to register the domain name and then configure a custom CNAME record with your hosting provider. See the <a href="#cname">section below</a> for information on how to configure a CNAME record.</p>
   </section>
-
-<section class="bcls-section">
-<h2 id="limitations">Limitations</h2>
-
-<ul>
-	<li>Your encoder must output an RTMP stream</li>
-	<li>Live broadcasts will experience a 20-30 second delay</li>
-	<li>Streaming must begin within 30 minutes of the event start (default-level account setting)</li>
-	<li>For users using Internet Explorer, version 10 or later is required</li>
-</ul>
-</section>
-
-<section class="bcls-section">
-<h2 id="steps">Steps to broadcast a live event</h2>
-
-<p>To stream your live event using the Live module, you will complete the following tasks:</p>
-
-<ul>
-	<li><a href="#liveapp">Create a new event using the Video Cloud Live module</a></li>
-	<li><a href="#encoder">Configure your encoder</a></li>
-	<li><a href="#publish">Publish the live stream</a></li>
-	<li><a href="#clip">Create a clip from the live event</a></li>
-</ul>
-</section>
-
-<section class="bcls-section">
-<h2 id="steps">Creating a new live event</h2>
-
-<ol class="bcls-tasklist-restart">
-	<li>In a browser window, navigate to <a href="https://studio.brightcove.com">Video Cloud Studio</a>.</li>
-	<li>Enter your Video Cloud login credentials and click<strong> Sign In.</strong></li>
-	<li>The current Video Cloud account name will appear in the upper right corner of the page. If you have multiple accounts, click the account selector drop down and select the account you would like to save the live asset in. If you select an account that has not been enabled for Live, the Live module will open in trial mode.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10821/node10820-account-selector.png" /></figure>
-	</li>
-	<li>Click <strong> Live</strong> in the navigation header.</li>
-	<li>Click the <strong>Create Event</strong> button to create a new event.</li>
-	<li>Enter an <strong>Event Name</strong>.</li>
-	<li>Enter some <strong>Tags</strong> for the event.</li>
-	<li>If your account has been configured with required custom fields, make sure the custom fields are assigned values.</li>
-	<li>Select a <strong>Live Ingest Profile</strong> from the dropdown list. The live ingest profile controls the number and quality of live renditions that are created.</li>
-	<li>Select <strong>Convert event to video asset when complete</strong>. This will save the event as a video in the Media module.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10821/node10820-create-live-event.png" /></figure>
-	</li>
-	<li>Click the <strong>ADVANCED OPTIONS</strong> link to expand the advanced options.</li>
-	<li>Set the <strong>Reconnect Time</strong> to 1 minute.</li>
-	<li>Select the <strong>Region</strong> closest to your location.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10821/node10820-adv-options.png" /></figure>
-	</li>
-	<li>Click <strong>Start Streaming</strong>. The Live module will return a <strong>Stream Endpoint (RTMP URL) </strong> and <strong>Stream Name</strong>. These values will be used in the encoder settings.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10821/node10820-encoder-settings1.png" /></figure>
-	</li>
-</ol>
-</section>
-
-<section class="bcls-section">
-<h2 id="encoder">Configuring your encoder</h2>
-
-<p>In this section, we will configure and use the OBS Studio encoder to support a live streaming event. OBS Studio software is a desktop application that captures input from your camera and produces a stream that can be delivered by a CDN. Note that there are hardware and other software based encoding solutions available that may be better suited for delivering your live streaming event. You can download the OBS Studio software <a href="https://obsproject.com">here</a>.</p>
-
-<aside class="bcls-aside bcls-aside--information">Note: You should have the OBS software installed and a camera connected to your computer before proceeding</aside>
-
-<aside class="bcls-aside bcls-aside--information">Note: This example uses a DSLR connected to a laptop using the Blackmagic Design UltraStudio Mini Recorder.</aside>
-
-<aside class="bcls-aside bcls-aside--information">Note: OBS offers the ability to record a local copy of the stream. By choosing to do this, you will have a local copy of the stream that you can create clips from in case any networking issues occur during the broadcast of the event. For information on how to record a local file, see the <a href="https://obsproject.com/docs/index.html">OBS documentation</a>.</aside>
-
-<ol class="bcls-tasklist-restart">
-	<li>Open OBS Studio.</li>
-	<li>In the <strong>Sources</strong> section, click <strong>+</strong> to add a new source. Select a <strong>Source</strong> from the list. This Quick Start is using a DSLR connected to a laptop using the Blackmagic Design UltraStudio Mini Recorder, so <strong>Blackmagic Device</strong> is selected.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10821/node18621-add-source.png" /></figure>
-	</li>
-	<li>Enter a name for the new source and click <strong>OK</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10821/node18621-blackmagic.png" /></figure>
-	</li>
-	<li>Select your camera from the <strong>Device</strong> list. A preview should appear in the properties dialog. Click <strong>OK</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10821/node18621-source-preview.png" /></figure>
-	</li>
-	<li>In the Controls section, click <strong>Settings</strong>.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10821/node18621-controls.png" /></figure>
-	</li>
-	<li>Click <strong>Stream</strong> in the left side of the Settings dialog.</li>
-	<li>For the <strong>Stream Type</strong> select <strong>Custom Streaming Server</strong>.</li>
-	<li>For the URL, use the <strong>Stream URL</strong> provided by the Live module.</li>
-	<li>For the <strong>Stream key</strong>, use <strong>alive</strong>.</li>
-	<li>Click <strong>OK</strong> to save the settings.</li>
-	<li>In the Controls section, click <strong>Start Streaming</strong>. The live stream should begin.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10821/node18621-live-stream-OBS.png" /></figure>
-	</li>
-</ol>
-
-<aside class="bcls-aside bcls-aside--information">Note: It will take about a minute to process your streams.</aside>
-</section>
-
-<section class="bcls-section">
-<h2 id="publish">Publishing the live event</h2>
-
-<p>To generate the embed code for the live event, follow these steps:</p>
-
-<ol class="bcls-tasklist-restart">
-	<li>Return to the Live module.</li>
-	<li>If the Control Room page for the event is not displayed, click the <strong>Live</strong> tab to display a list of live events. Click on the event name to open the Control Room page.</li>
-	<li>Confirm that you can see the live stream. Note that after starting the encoder, it may take a minute for the live stream to appear.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10821/node10820-control-room.png" /></figure>
-	</li>
-	<li>Click <strong>Publish and Embed</strong>.</li>
-	<li>Select a <strong>Player</strong> and then click the <strong>Player URL</strong> to view the live stream.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10821/node10820-embed-code.png" /></figure>
-	</li>
-	<li>When you are done with the live stream, click the <strong>Stop Stream</strong> button in the Live module. Also, return to OBS Studio and click the stream button to stop the encoder from streaming.
-        <aside class="bcls-aside bcls-aside--information">Note: It is important to make sure you close/stop your encoder when the live stream is complete. Leaving a connection open between any encoder and Brightcove, even when no data is being sent, may result in unexpected connection charges.</aside>
-	</li>
-</ol>
-</section>
-
-<section class="bcls-section">
-<h2 id="clip">Creating a clip</h2>
-
-<p>The Live module provides the ability to create video clips from completed events. Clips can also be created while a live event is in progress. There are several reasons you might want to create a clip:</p>
-
-<ul>
-	<li>To create a short, teaser clip that can be posted to social media</li>
-	<li>To limit the length of a video that you want to post (most platforms limit the length of videos)</li>
-	<li>You have found that shorter videos perform better on social media</li>
-</ul>
-
-<p>Clips can only be created within 7 days of the event end. Afterwards, the <strong>Create Clip</strong> button will be disabled. If the event is longer than 24 hours, only the last 24 hours are clippable.</p>
-
-<aside class="bcls-aside bcls-aside--information">Note: For complete details on using the clipping interface, see <a href="/node/18551">Creating a Video Clip Using the Live Module</a>.</aside>
-
-<p>To create a clip, follow these steps:</p>
-
-<ol class="bcls-tasklist-restart"> 
-	<li>Return to the Live module.</li>
-	<li>Click the <strong>Completed</strong> tab.</li>
-	<li>Locate the event and click the event name to open the Control Room.</li>
-	<li>Click <strong>Create Clip</strong>. The clipping editor will open.</li>
-	<li>Click and drag the clipping handles (<img alt="" src="/assets/images/get-started/10821/node10820-clip-handle.png" />)on the focus timeline to set the start and end points for the clip.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10821/node10820-clip-start-end.png" /></figure>
-	</li>
-	<li>Click <strong>Preview Clip</strong> to preview the clip. The start and end points can be adjusted as needed.</li>
-	<li>Click <strong>Save Clip</strong>.</li>
-	<li>Enter a <strong>Clip Name</strong> and other metadata values. Any required fields for the account will also appear and should be assigned values.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10821/node10820-clip-metadata.png" /></figure>
-	</li>
-	<li>Click <strong>Create Clip</strong>. The ingestion process will begin and the clip will be saved to your Video Cloud account.</li>
-	<li>Clips will appear below the clip editor. Click <strong>Publish to Social</strong> to publish the clip to one of your social destinations using Brightcove Social. For information on publishing videos using the Social module, see <a href="/node/16344">Publishing Videos to Social Media Platforms</a>.</li>
-	<li>Click the <strong>Back to Control Room: Completed</strong> breadcrumb. All clips will also appear in the Control Room for the event.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/10821/node10820-clips-section.png" /></figure>
-	&nbsp;
-
-	<aside class="bcls-aside bcls-aside--information">Note: You can click the Create Clip button multiple times to create multiple clips of your broadcast. This allows you to trim and save as many times as you want for each broadcast, saving the clips as separate VOD assets in your media library.</aside>
-	</li>
-
-</section>
-
   <section class="bcls-section">
-<h2 id="troubleshoot">Troubleshooting live stream issues</h2>
-
-<p>If you need further help getting your live event to work, you can <a href="https://support.brightcove.com/en/contact/create">contact us</a>. To make sure you get the fastest response possible, below is a list of what support will need to solve the problem.</p>
-
-<ul>
-	<li>The specific symptoms the stream is having. For example, does it not play at all or does it stutter or freeze?</li>
-	<li>Whether this stream worked correctly in the past</li>
-	<li>The entry point URL you are using in your encoder</li>
-	<li>The encoding software and hardware are you using</li>
-	<li>The URL to the player to which you have published the live event</li>
-	<li>The video ID of your live asset in Video Cloud Studio</li>
-	<li>The results of a trace-route from your encoder to the publishing point host</li>
-</ul>
+    <h2 id="create">Creating a custom domain</h2>
+    <p>To create a custom domain, follow these steps:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>Open Brightcove Engage.</li>
+      <li>Open the <strong>Projects</strong> page and click the <strong>Settings</strong> link at the top of the page</li>
+      <li>In the left navigation, click the <strong>Custom Domains and SSL</strong> link.</li>
+      <li>Click <strong>Create Custom Domain</strong>.</li>
+      <li>Select a domain option to use:
+        <ul>
+          <li><strong>brightcoveengage.video</strong> - The site domain will have the format <code>&lt;your domain&gt;.brightcoveengage.video</code>.</li>
+          <li><strong>Custom</strong> - Select to host the site on your own custom domain. When selecting this option, you will also have to <a href="#cname">configure a CNAME record with your hosting provider</a>.</li>
+        </ul>
+      </li>
+      <li>Enter the domain name. A message will be displayed to indicate if the domain is valid or invalid. If the domain name is invalid, enter a new domain name.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="create custom domain" src="/assets/images/experiences/create-custom-domain.png" /></figure>
+      </li>
+      <li>If you are publishing the site using a Brightcove provided domain, there is an option to <strong>Enforce SSL on this domain</strong>. Check <strong>Enforce SSL on this domain  </strong>to enable a redirect from the non-SSL version of the site if a viewer goes to it.</li>
+      <li>If you are publishing the site to your own custom domain, you have the option of securing the site using SSL. Check the <strong>Use SSL</strong> checkbox to secure the site using SSL. For information on using SSL, see <a href="/settings/securing-portal-experience-ssl.html">Securing a Portal Experience with SSL</a>.</li>
+      <li>Check <strong>Enable Redirect</strong> to redirect this URL to another URL. Typically this would only be checked after this domain has been used for a while. When this option is selected, enter the <strong>Redirect URL</strong> this existing URL should be redirected to.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="create custom domain" src="/assets/images/experiences/enable-redirect.png" /></figure>
+        Check <strong>Use a permanent redirect (HTTP status code 301)</strong> to indicate that the redirect is permanent. When a search engine spider finds a 301 status code in the response header of a web page, it understands that this web page no longer exists and replaces the indexed URL with the new one. This option will retain your old web page traffic and page rank.
+      </li>
+      <li>Click <strong>Save</strong>. A list of configured domains will be displayed.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="list of domains" src="/assets/images/experiences/domain-list.png" /></figure>
+        <aside class="bcls-aside bcls-aside--information">Note: When using a Brightcove provided domain, the SSL status will always be <strong>Provided</strong>. This indicates that by adding <strong>https://</strong> to the beginning of the site URL, the data transmission between your browser and the Gallery site will be secure.</aside>
+      </li>
+      <li>Create additional domains as needed.</li>
+    </ol>
+    <p>To edit or delete a domain, click the edit (<img alt="edit icon" src="/assets/images/experiences/edit-icon.png" />) or delete (<img alt="delete icon" src="/assets/images/experiences/delete-icon.png" />) buttons.</p>
+    <p>Once custom domains have been created, they can be assigned to a site as part of the site properties. For information, see <a href="/experiences/assigning-custom-domain-web-experience.html">Assigning a Custom Domain to a Web Experience</a>.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="cname">Configuring CNAME records with your hosting provider</h2>
+    <aside class="bcls-aside bcls-aside--information">Note: CNAME records only need to be configured when custom domains will be assigned to a site. CNAME records DO NOT have to be created for sites using Brightcove provided domains.</aside>
+    <p>The steps to configure a CNAME (Canonical Name) record will differ based upon your hosting provider. You need to configure a CNAME record for each custom domain you will be using. If your site is configured to use SSL, the CNAME record should point to the CloudFront URL. See <a href="/experiences/securing-web-experience-ssl.html">Securing a Web Experience with SSL</a> for information. Note that custom domains must include a subdomain in order to be configured as a CNAME ex: <code>video </code> must be placed before <code>brightcovelearning.com </code> so I can configure my CNAME.</p>
+    <p>The CNAME values are displayed as part of the Custom Domains &amp; SSL settings.</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/cname-list.png" /></figure>
+    <p>In this example, for the custom domain of <code>video.brightcovelearning.com </code>, I would add a <strong>CNAME</strong> record and add a host of <code>video </code> and point it to <code>d3mkhzp6k6x3hl.cloudfront.net</code>.</p>
+    <p>Note that browsing directly to a Cloudfront URL will return a "page not found" error (404). A <code>curl</code> command can be used to verify the domain configuration. For this example:</p>
+    <pre>
+<code>curl -H "Host: video.brightcovelearning.com" https://d3mkhzp6k6x3hl.cloudfront.net</code>
+</pre>
+    <p>The curl statement should return the contents of the site home page.</p>
+    <p>You may need to contact your network administrator or web hosting provider for help with this step. Remember that it can take up to 48 hours for DNS changes to take effect.</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="secure">Securing sites with SSL</h2>
+    <p>There are two options for securing a Portal Experience&nbsp;with SSL:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>For sites that are being published using the assigned site slug (i.e. <code>&lt;site-slug&gt;.bcvp0rtal.com </code>) or are using a Brightcove supplied domain, no configuration is needed to support https. Adding <strong>https://</strong> to the beginning of the URL will secure the data transmission between your browser and the Gallery site. You can also select <strong>Enforce SSL on this domain (recommended)</strong> to enable a redirect from the non-SSL version of the site if a viewer goes to it.</li>
+      <li>For sites that are hosted using your own custom domain, check the <strong>Use SSL</strong> option when entering your domain name. You will then be prompted to enter your certificate information. For more information, see <a href="/experiences/securing-web-experience-ssl.html">Securing a Web Experience with SSL</a>.</li>
+    </ol>
   </section>
 </article>
+
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
@@ -589,7 +460,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
 
 <hr>
 <div class="last-updated">
-  Page last updated on 13 Mar 2020
+  Page last updated on 23 Mar 2020
 </div>
 
 <footer class="bcls-footer" role="contentinfo">

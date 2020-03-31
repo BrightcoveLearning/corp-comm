@@ -5,6 +5,8 @@
   name: Getting Started
   url: /get-started/
   docs:
+    - name: Brightcove Engage System Requirements
+      url: /get-started/brightcove-engage-system-requirements.html
     - name: Brightcove Engage Training Videos
       url: /get-started/brightcove-engage-training-videos.html
     - name: Creating Mobile App Experiences
