@@ -209,49 +209,7 @@
     </url>
     
     <url>
-        <loc>https://engage.support.brightcove.com/experiences/</loc>
-        <lastmod>2020-04-01</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/downloads/</loc>
-        <lastmod>2020-04-01</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
         <loc>https://engage.support.brightcove.com/get-started/</loc>
-        <lastmod>2020-04-01</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/analytics/</loc>
-        <lastmod>2020-04-01</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/</loc>
-        <lastmod>2020-04-01</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/support/</loc>
-        <lastmod>2020-04-01</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/release-notes/</loc>
         <lastmod>2020-04-01</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -265,6 +223,20 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/release-notes/</loc>
+        <lastmod>2020-04-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/experiences/</loc>
+        <lastmod>2020-04-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/videos/</loc>
         <lastmod>2020-04-01</lastmod>
         <changefreq>daily</changefreq>
@@ -272,7 +244,35 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/</loc>
+        <lastmod>2020-04-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/analytics/</loc>
+        <lastmod>2020-04-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/support/</loc>
+        <lastmod>2020-04-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/live/</loc>
+        <lastmod>2020-04-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/downloads/</loc>
         <lastmod>2020-04-01</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -434,13 +434,6 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/experiences/securing-web-experience-ssl.html</loc>
-        <lastmod>2020-04-01</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/sitemap.json</loc>
         <lastmod>2020-04-01</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
