@@ -102,6 +102,14 @@
     - name: Styling Web Experiences
       url: /experiences/styling-web-experiences.html
 - section: 
+  name: Managing Live Events
+  url: /live/
+  docs:
+    - name: Creating and Managing Live Events
+      url: /live/creating-and-managing-live-events-using-live-module.html
+    - name: Creating Video Clips
+      url: /live/creating-video-clips.html
+- section: 
   name: Reviewing Analytics
   url: /analytics/
   docs:

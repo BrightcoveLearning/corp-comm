@@ -122,7 +122,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       
       
       
-      <li class="breadcrumb-item"><a href="/live/">Working with Live Events</a></li>
+      <li class="breadcrumb-item"><a href="/live/">Managing Live Events</a></li>
       
       <li class="breadcrumb-item active" aria-current="page">Creating and Managing Live Events</li>
     </ol>
@@ -335,6 +335,21 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
             
           
             
+              <h5 class="submenu-header"><a href="/live/">Managing Live Events <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/live/creating-and-managing-live-events-using-live-module.html">Creating and Managing Live Events</a></li>
+                  
+                
+                  
+                    <li><a href="/live/creating-video-clips.html">Creating Video Clips</a></li>
+                  
+                
+              </ul>
+            
+          
+            
               <h5 class="submenu-header"><a href="/analytics/">Reviewing Analytics <strong>+</strong></a></h5>            
               <ul class="sidenav-submenu" style="display:none;">
                 
@@ -474,12 +489,12 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
   </section>
   <section class="bcls-section">
     <h2 id="create">Creating a new event</h2>
-    <p>For a complete step-by-step guide to creating and streaming a live event, see:</p>
+    <p>For a complete step-by-step guide to creating and streaming a live event, see one of the following topics:</p>
     <ul>
       <li> <a href="/live/step-step-using-live-streaming-telestream-wirecast.html">Step-by-Step: Live Streaming with Telestream Wirecast</a></li>
       <li><a href="/live/step-step-using-live-streaming-open-broadcaster-software-obs.html">Step-by-Step: Live Streaming with Open Broadcaster Software (OBS)</a></li>
     </ul>
-    <p>To create a new event, follow these steps.</p>
+    <p>To create a new live event, follow these steps.</p>
     <ol class="bcls-tasklist-restart">
       <li class="language-editable">From the Manage Events page click <strong>Create Event</strong>. The Create Live Event  page will open.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/new-live-event.png" /></figure>
@@ -507,7 +522,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       </li>
       <li class="language-editable">Click <strong>ADVANCED OPTIONS</strong> and <a href="#advanced">configure the advanced options</a>.</li>
       <li class="language-editable">Click<strong> Create Event </strong>to start the live event. The <a href="#controlroom">Control Room page</a> will open with details about the live event including the <strong>Streaming Endpoint (RTMP URL)</strong> and <strong>Stream Name</strong> which will be used by your encoder.
-        <aside class="bcls-aside bcls-aside--information"> It will take about a minute to process your streams.</aside>
+        <aside class="bcls-aside bcls-aside--information">Note: It will take about a minute to process your streams.</aside>
         <p>By default, the encoder must be started within 30 minutes from when a new event is created.</p>
       </li>
     </ol>
@@ -557,8 +572,8 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <ul>
         <li class="language-editable"><strong>Event Name</strong> - Name of the event</li>
         <li class="language-editable"><strong>Short Description</strong> - Short description of the event</li>
-        <li class="language-editable"><strong>Tags</strong> - Tags to associate with the event. Tags faciliate searching and can be used when creating Smart playlists.</li>
-        <li class="language-editable"><strong>Reference ID</strong> - Internal reference ID for the event (not used)</li>
+        <li class="language-editable"><strong>Tags</strong> - Tags to associate with the event. Tags facilitate searching and can be used when creating Smart playlists.</li>
+        <li class="language-editable"><strong>Reference ID</strong> - Internal reference ID for the event</li>
         <li class="language-editable"><strong>Streaming to Social Media</strong> - If <strong>Allowed</strong>, the live event can be assigned to a scheduled social event</li>
         <li class="language-editable"><strong>Digital Rights Management (DRM)</strong> - </li>
         <li class="language-editable"><strong>Playback URL</strong> - URL that can be used to view the live stream in a non-Brightcove Player</li>
@@ -569,9 +584,9 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <p>The Stream Information section displays the following information:</p>
       <ul>
         <li class="language-editable"><strong>Job ID</strong> - Internal job ID</li>
-        <li class="language-editable"><strong>Video ID</strong></li>
+        <li class="language-editable"><strong>Video ID</strong> - Video ID of the live event stream (this will also be the Video ID for the VOD asset on the Videos page)</li>
         <li class="language-editable"><strong> Endpoint (RTMP URL</strong>) - Streaming endpoint used by the encoder</li>
-        <li class="language-editable"><strong> Name</strong> - Stream name used by the encoder</li>
+        <li class="language-editable"><strong> Name</strong> - Stream name used by the encoder (always <strong>alive</strong>)</li>
         <li class="language-editable"><strong>Region</strong> - Streaming region</li>
         <li class="language-editable"><strong>Status</strong> - Current job status
           <ul>
@@ -591,7 +606,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
     </div>
     <div>
       <h3 id="clips">Clips</h3>
-      <p>The Clips section displays all of the clips that were created from the live stream. Clicking the clip name will open the clip on the <strong>Videos</strong> page. For information on creating a clip, see <a href="/live/creating-video-clips.html">Creating Video Clips</a>.</p>
+      <p>The Clips section displays all of the clips that were created (if any) from the live stream. Clicking a clip name will open the clip on the <strong>Videos</strong> page. For information on creating a clip, see <a href="/live/creating-video-clips.html">Creating Video Clips</a>.</p>
     </div>
     <div>
       <h3 id="monitor">Monitor</h3>
@@ -599,21 +614,6 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <p>Input Drift measures the health of the input stream and is defined as the difference from the input timestamp and the real time clock.</p>
       <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/monitor.png" /></figure>
     </div>
-  </section>
-  <section class="bcls-section">
-    <h2 id="report">Event reporting</h2>
-    <p>Click <strong>Reporting</strong> in the left navigation to view live event information. The reporting information is available while an event is in progress and for up to 1 hour after the event ends.</p>
-    <p>The reporting page will display a live event snapshot with the following information:</p>
-    <ul>
-      <li><strong>Total Views</strong> - </li>
-      <li><strong>Unique Viewers</strong> - </li>
-      <li><strong>Avg View Time</strong> - </li>
-      <li><strong>Total Viewed Minutes</strong> - </li>
-      <li><strong>Ad Starts</strong> - </li>
-    </ul>
-    <p>A graph displaying the number of concurrent viewers over time will also be displayed.</p>
-    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/reporting.png" /></figure>
-    <p>Click <strong>Select Graphs</strong> to select which graphs appear and for a description of what each graph contains.</p>
   </section>
   <section class="bcls-section">
     <h2 id="duplicate">Duplicating an event</h2>
