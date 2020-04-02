@@ -63,6 +63,10 @@
       url: /experiences/adding-objects-web-experience-pages.html
     - name: Adding Videos to an Experience
       url: /experiences/adding-videos-experience.html
+    - name: Assigning a Custom Domain to a Web Experience
+      url: /experiences/assigning-custom-domain-web-experience.html
+    - name: Configuring Custom Domains and SSL
+      url: /experiences/configuring-custom-domains-and-ssl.html
     - name: Configuring Experience Settings
       url: /experiences/configuring-experience-settings.html
     - name: Controlling Access to an Experience
@@ -87,6 +91,8 @@
       url: /experiences/previewing-publishing-mobile-app-experience.html
     - name: Previewing and Publishing Web Experiences
       url: /experiences/previewing-publishing-web-experience.html
+    - name: Securing a Web Experience with SSL
+      url: /experiences/securing-web-experience-ssl.html
     - name: Securing Experiences Using Okta SSO
       url: /experiences/securing-experiences-okta.html
     - name: Securing Experiences Using PingOne SSO
