@@ -508,7 +508,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
         </ul>
       </li>
       <li class="language-editable">Select <strong>Convert event to video asset when complete</strong> to save a video on demand version of the live video to your  account. <strong>Note that the VOD version is not available as soon as the live event ends, the video will be available once the upload processing is complete.</strong></li>
-      <li class="language-editable">Click <strong>STREAM OPTIONS</strong> and select a <strong>Region</strong>. The <strong>Region</strong> is the Amazon Web Services (AWS) region to use. To reduce latency, you should select the region that is closest to where your encoder is located. <strong>By default, the region is set to Oregon  which will produce bad results if you are streaming from another continent.</strong> The following regions are supported:
+      <li class="language-editable">In the <strong>STREAM OPTIONS</strong> section, select a <strong>Region</strong>. The <strong>Region</strong> is the Amazon Web Services (AWS) region to use. To reduce latency, you should select the region that is closest to where your encoder is located. <strong>By default, the region is set to Oregon  which will produce bad results if you are streaming from another continent.</strong> The following regions are supported:
         <ul>
           <li class="language-editable">Oregon  (default)</li>
           <li class="language-editable">Virginia</li>
@@ -522,6 +522,7 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       </li>
       <li class="language-editable">Click <strong>ADVANCED OPTIONS</strong> and <a href="#advanced">configure the advanced options</a>.</li>
       <li class="language-editable">Click<strong> Create Event </strong>to start the live event. The <a href="#controlroom">Control Room page</a> will open with details about the live event including the <strong>Streaming Endpoint (RTMP URL)</strong> and <strong>Stream Name</strong> which will be used by your encoder.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/encoder-settings.png" /></figure>
         <aside class="bcls-aside bcls-aside--information">Note: It will take about a minute to process your streams.</aside>
         <p>By default, the encoder must be started within 30 minutes from when a new event is created.</p>
       </li>
