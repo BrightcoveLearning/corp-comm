@@ -209,7 +209,42 @@
     </url>
     
     <url>
+        <loc>https://engage.support.brightcove.com/support/</loc>
+        <lastmod>2020-04-03</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/admin/</loc>
+        <lastmod>2020-04-03</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/release-notes/</loc>
+        <lastmod>2020-04-03</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
         <loc>https://engage.support.brightcove.com/experiences/</loc>
+        <lastmod>2020-04-03</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/videos/</loc>
+        <lastmod>2020-04-03</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://engage.support.brightcove.com/live/</loc>
         <lastmod>2020-04-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -238,41 +273,6 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/</loc>
-        <lastmod>2020-04-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/support/</loc>
-        <lastmod>2020-04-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/release-notes/</loc>
-        <lastmod>2020-04-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/admin/</loc>
-        <lastmod>2020-04-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/videos/</loc>
-        <lastmod>2020-04-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/live/</loc>
         <lastmod>2020-04-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
@@ -462,20 +462,6 @@
     
     <url>
         <loc>https://engage.support.brightcove.com/get-started/step-by-step-web-exp.html</loc>
-        <lastmod>2020-04-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/live/step-step-using-live-streaming-open-broadcaster-software-obs.html</loc>
-        <lastmod>2020-04-03</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.5</priority>
-    </url>
-    
-    <url>
-        <loc>https://engage.support.brightcove.com/live/step-step-using-live-streaming-telestream-wirecast.html</loc>
         <lastmod>2020-04-03</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>

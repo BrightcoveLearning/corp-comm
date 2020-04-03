@@ -140,7 +140,32 @@
   },
 
   {
+      "newURL": "https://engage.support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/admin/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/release-notes/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://engage.support.brightcove.com/experiences/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/videos/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/live/",
       "oldURL": "/index"
   },
 
@@ -161,31 +186,6 @@
 
   {
       "newURL": "https://engage.support.brightcove.com/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://engage.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://engage.support.brightcove.com/release-notes/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://engage.support.brightcove.com/admin/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://engage.support.brightcove.com/videos/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://engage.support.brightcove.com/live/",
       "oldURL": "/index"
   },
 
@@ -297,16 +297,6 @@
   {
       "newURL": "https://engage.support.brightcove.com/get-started/step-by-step-web-exp.html",
       "oldURL": "/step-by-step-web-exp"
-  },
-
-  {
-      "newURL": "https://engage.support.brightcove.com/live/step-step-using-live-streaming-open-broadcaster-software-obs.html",
-      "oldURL": "/step-step-using-live-streaming-open-broadcaster-software-obs"
-  },
-
-  {
-      "newURL": "https://engage.support.brightcove.com/live/step-step-using-live-streaming-telestream-wirecast.html",
-      "oldURL": "/step-step-using-live-streaming-telestream-wirecast"
   },
 
   {
