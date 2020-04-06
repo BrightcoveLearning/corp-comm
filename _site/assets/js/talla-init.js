@@ -10,7 +10,7 @@ var token =
     Talla.OptionAnonymous(true),
     Talla.OptionThemeColor('rgb(243, 148, 36)'),
     Talla.OptionDisplayName('Search Brightcove Engage Docs'),
-    Talla.OptionKnowledgeGroups(['aea7ad02-7766-4f6d-a7dc-56e56f735031']),
+    Talla.OptionKnowledgeGroups(['2564d71e-af2a-444c-9271-08c33aaffbff']),
     Talla.OptionWideBeacon(true),
     Talla.OptionBeaconCTA("Search Brightcove Engage Docs"),
     Talla.OptionOpenIcon('https://learning-services-media.brightcove.com/doc-assets/site-assets/images/site/search.png'),
