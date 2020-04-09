@@ -41,12 +41,13 @@ parent: Experiences
   <p>To create an Access Control Profile, follow these steps:</p>
   <ol class="bcls-tasklist-restart" style="--s:1">
     <li>Login to Brightcove Engage.</li>
-    <li>From the <strong>Projects</strong> page, click <strong>Settings</strong>. The Access Control Profiles page will display with a list of profiles (if any) that have been created.
+    <li>From the <strong>Projects</strong> page, click <strong>Settings</strong>.</li>
+    <li>In the left navigation click <strong>Access Control Profiles</strong>. The Access Control Profiles page will display with a list of profiles (if any) that have been created.
       <figure class="bcls-figure"><img class="bcls-image--no-border" alt="profiles list" src="/assets/images/configuration/access-control-profile-list.png" /></figure>
     </li>
     <li>Click <strong>Create Profile</strong>.</li>
     <li>Give the profile a <strong>Name</strong>.</li>
-    <li><strong>(Optional)</strong> Configure a <strong>Session Timeout</strong> to specify the amount of time a user's session will last. A few notes:
+    <li><strong>(Optional)</strong> Configure a <strong>Session Timeout</strong>. This is the amout of time a user can be logged into an app before they are required to re-authenticate. A few notes:
       <ul>
         <li>Your SSO provider must be set to either force re-authentication or to have a session timeout of less than this timeout. If it's not, we'll redirect to your SSO provider after our timeout and they will immediately issue a response that the user is logged in.</li>
       </ul>
