@@ -53,7 +53,7 @@ parent: Experiences
       <li>Paste the Signing Certificate into the <strong>X.509 Certificate</strong> field.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/auth0-cert-pasted-engage.png" /></figure>
       </li>
-      <li>Remove the ---BEGIN CERTIFICATE--- and ---END CERTIFICATE--- lines from the <strong>X.509 Certificate</strong> field.</li>
+      <li>Remove the <strong>---BEGIN CERTIFICATE---</strong> and <strong>---END CERTIFICATE---</strong> lines from the <strong>X.509 Certificate</strong> field.</li>
       <li>Return to  Auth0.</li>
       <li>Click the <strong>Endpoints</strong> link.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/auth0-endpoints-link.png" /></figure>
@@ -67,17 +67,19 @@ parent: Experiences
       <li>Click <strong>Save</strong> to save the Access Control Profile.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/auth0-acp-created.png" /></figure>
       </li>
-        <li>Return to Auth0.</li>
-        <li>At the top of the page below the application name, click the <strong>Addons</strong> link.
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/auth0-addons.png" /></figure></li>
-        <li>Enable the <strong>SAML2 WEB APP</strong> option.</li>
-        <li>In the <strong>Application  Callback URL</strong> field, add the following URL: <code>https://auth.bcvp0rtal.com/login/callback</code>
-        <aside class="bcls-aside bcls-aside--information language-editable">Note: This value may already be populated.</aside></li>
-        <li>Scroll to the bottom of the dialog and click <strong>ENABLE</strong>.</li>
-        <li>Close the dialog.</li>
+      <li>Return to Auth0.</li>
+      <li>At the top of the page below the application name, click the <strong>Addons</strong> link.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/auth0-addons.png" /></figure>
+      </li>
+      <li>Enable the <strong>SAML2 WEB APP</strong> option.</li>
+      <li>In the <strong>Application  Callback URL</strong> field, add the following URL: <code>https://auth.bcvp0rtal.com/login/callback</code>
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: This value may already be populated.</aside>
+      </li>
+      <li>Scroll to the bottom of the dialog and click <strong>ENABLE</strong>.</li>
+      <li>Close the dialog.</li>
     </ol>
-  <p>Make sure you save the changes to the application settings.</p>
-    </section>
+    <p>Make sure you save the changes to the application settings.</p>
+  </section>
   <section class="bcls-section">
     <h2 id="user">Creating a User in Auth0</h2>
     <p>This topic uses a trial account of Auth0. By default, no users are created. You may need to add a user to complete the testing process.</p>
@@ -98,8 +100,7 @@ parent: Experiences
       <li>Return to Brightcove Engage.</li>
       <li>Edit the experience you want to secure.</li>
       <li>In the left navigation, click <strong>SITE CONFIGURATION &gt; Access Control</strong>.</li>
-      <li>Select the <strong>Access Control Profile</strong> that is associated with the Auth0 SSO configuration.
-        <img class="bcls-image--no-border" alt="" src="/assets/images/experiences/auth0-select-access-control.png" />
+      <li>Select the <strong>Access Control Profile</strong> that is associated with the Auth0 SSO configuration. <img class="bcls-image--no-border" alt="" src="/assets/images/experiences/auth0-select-access-control.png" />
         <figure class="bcls-figure"></figure>
       </li>
       <li>Click <strong>Save</strong>.</li>
