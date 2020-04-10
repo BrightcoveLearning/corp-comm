@@ -483,11 +483,11 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Copy the <strong>Signing Certificate</strong> to the clipboard.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/auth0-signing-cert.png" /></figure>
       </li>
-      <li>Click <strong>SAVE CHANGES</strong> to save the application.</li>
       <li>Return to Brightcove Engage and the Access Control Profile you created in the prior section.</li>
       <li>Paste the Signing Certificate into the <strong>X.509 Certificate</strong> field.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/auth0-cert-pasted-engage.png" /></figure>
       </li>
+      <li>Remove the ---BEGIN CERTIFICATE--- and ---END CERTIFICATE--- lines from the <strong>X.509 Certificate</strong> field.</li>
       <li>Return to  Auth0.</li>
       <li>Click the <strong>Endpoints</strong> link.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/auth0-endpoints-link.png" /></figure>
@@ -501,12 +501,20 @@ function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;i
       <li>Click <strong>Save</strong> to save the Access Control Profile.
         <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/auth0-acp-created.png" /></figure>
       </li>
+        <li>Return to Auth0.</li>
+        <li>At the top of the page below the application name, click the <strong>Addons</strong> link.
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/experiences/auth0-addons.png" /></figure></li>
+        <li>Enable the <strong>SAML2 WEB APP</strong> option.</li>
+        <li>In the <strong>Application  Callback URL</strong> field, add the following URL: <code>https://auth.bcvp0rtal.com/login/callback</code>
+        <aside class="bcls-aside bcls-aside--information language-editable">Note: This value may already be populated.</aside></li>
+        <li>Scroll to the bottom of the dialog and click <strong>ENABLE</strong>.</li>
+        <li>Close the dialog.</li>
     </ol>
-    <p>&nbsp;</p>
-  </section>
+  <p>Make sure you save the changes to the application settings.</p>
+    </section>
   <section class="bcls-section">
     <h2 id="user">Creating a User in Auth0</h2>
-    <p>This topic uses a trial account of Auth0. By default, no users are created. You may need to add a user to complete the testing process. In a production environment, typically you would also create roles and assign users to roles. This topic will create a single user and then assign the user access to the Brightcove Engage Application that was created in the previous section.</p>
+    <p>This topic uses a trial account of Auth0. By default, no users are created. You may need to add a user to complete the testing process.</p>
     <ol class="bcls-tasklist-restart">
       <li>Return to  Auth0.</li>
       <li>In the left navigation, click <strong> Users &amp; Roles &gt; Users</strong>.</li>
