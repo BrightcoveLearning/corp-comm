@@ -65,6 +65,11 @@
   },
 
   {
+      "newURL": "https://engage.support.brightcove.com/experiences/configuring-single-sign-active-directory-federation-services.html",
+      "oldURL": "/configuring-single-sign-active-directory-federation-services"
+  },
+
+  {
       "newURL": "https://engage.support.brightcove.com/videos/configuring-video-availability.html",
       "oldURL": "/configuring-video-availability"
   },
