@@ -69,6 +69,8 @@
       url: /experiences/configuring-custom-domains-and-ssl.html
     - name: Configuring Experience Settings
       url: /experiences/configuring-experience-settings.html
+    - name: Configuring Single Sign-On with ADFS
+      url: /experiences/configuring-single-sign-active-directory-federation-services.html
     - name: Controlling Access to an Experience
       url: /experiences/controlling-access-experience.html
     - name: Creating Access Control Profiles
