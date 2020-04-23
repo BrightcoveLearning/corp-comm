@@ -150,37 +150,12 @@
   },
 
   {
-      "newURL": "https://engage.support.brightcove.com/admin/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://engage.support.brightcove.com/release-notes/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://engage.support.brightcove.com/experiences/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://engage.support.brightcove.com/videos/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://engage.support.brightcove.com/live/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://engage.support.brightcove.com/downloads/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://engage.support.brightcove.com/get-started/",
+      "newURL": "https://engage.support.brightcove.com/experiences/",
       "oldURL": "/index"
   },
 
@@ -191,6 +166,31 @@
 
   {
       "newURL": "https://engage.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/videos/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/release-notes/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/admin/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/live/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/get-started/",
       "oldURL": "/index"
   },
 
@@ -287,6 +287,11 @@
   {
       "newURL": "https://engage.support.brightcove.com/experiences/securing-experiences-okta.html",
       "oldURL": "/securing-experiences-okta"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/experiences/securing-experiences-passwordless.html",
+      "oldURL": "/securing-experiences-passwordless"
   },
 
   {

@@ -95,11 +95,11 @@
       url: /experiences/previewing-publishing-web-experience.html
     - name: Securing a Web Experience with SSL
       url: /experiences/securing-web-experience-ssl.html
-    - name: Securing Experiences Using Auth0 SSO
+    - name: Securing Experiences Using Auth0
       url: /experiences/securing-experiences-auth0.html
-    - name: Securing Experiences Using Okta SSO
+    - name: Securing Experiences Using Okta
       url: /experiences/securing-experiences-okta.html
-    - name: Securing Experiences Using PingOne SSO
+    - name: Securing Experiences Using PingOne
       url: /experiences/securing-experiences-pingone.html
     - name: Styling Mobile App Experiences
       url: /experiences/styling-mobile-app-experiences.html
