@@ -145,27 +145,7 @@
   },
 
   {
-      "newURL": "https://engage.support.brightcove.com/support/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://engage.support.brightcove.com/downloads/",
-      "oldURL": "/index"
-  },
-
-  {
       "newURL": "https://engage.support.brightcove.com/experiences/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://engage.support.brightcove.com/analytics/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://engage.support.brightcove.com/",
       "oldURL": "/index"
   },
 
@@ -175,12 +155,27 @@
   },
 
   {
+      "newURL": "https://engage.support.brightcove.com/admin/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
       "newURL": "https://engage.support.brightcove.com/release-notes/",
       "oldURL": "/index"
   },
 
   {
-      "newURL": "https://engage.support.brightcove.com/admin/",
+      "newURL": "https://engage.support.brightcove.com/downloads/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/get-started/",
       "oldURL": "/index"
   },
 
@@ -190,7 +185,12 @@
   },
 
   {
-      "newURL": "https://engage.support.brightcove.com/get-started/",
+      "newURL": "https://engage.support.brightcove.com/analytics/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -277,6 +277,16 @@
   {
       "newURL": "https://engage.support.brightcove.com/analytics/reviewing-video-analytics.html",
       "oldURL": "/reviewing-video-analytics"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/search-test.html",
+      "oldURL": "/search-test"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/search.html",
+      "oldURL": "/search"
   },
 
   {
