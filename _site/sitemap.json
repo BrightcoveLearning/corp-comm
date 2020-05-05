@@ -150,7 +150,7 @@
   },
 
   {
-      "newURL": "https://engage.support.brightcove.com/live/",
+      "newURL": "https://engage.support.brightcove.com/videos/",
       "oldURL": "/index"
   },
 
@@ -170,7 +170,7 @@
   },
 
   {
-      "newURL": "https://engage.support.brightcove.com/videos/",
+      "newURL": "https://engage.support.brightcove.com/support/",
       "oldURL": "/index"
   },
 
@@ -180,12 +180,7 @@
   },
 
   {
-      "newURL": "https://engage.support.brightcove.com/analytics/",
-      "oldURL": "/index"
-  },
-
-  {
-      "newURL": "https://engage.support.brightcove.com/support/",
+      "newURL": "https://engage.support.brightcove.com/live/",
       "oldURL": "/index"
   },
 
@@ -196,6 +191,11 @@
 
   {
       "newURL": "https://engage.support.brightcove.com/get-started/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/analytics/",
       "oldURL": "/index"
   },
 
@@ -250,6 +250,11 @@
   },
 
   {
+      "newURL": "https://engage.support.brightcove.com/support/online-training-courses.html",
+      "oldURL": "/online-training-courses"
+  },
+
+  {
       "newURL": "https://engage.support.brightcove.com/support/opening-case-with-brightcove-support.html",
       "oldURL": "/opening-case-with-brightcove-support"
   },
@@ -277,6 +282,11 @@
   {
       "newURL": "https://engage.support.brightcove.com/experiences/previewing-publishing-web-experience.html",
       "oldURL": "/previewing-publishing-web-experience"
+  },
+
+  {
+      "newURL": "https://engage.support.brightcove.com/support/register-training.html",
+      "oldURL": "/register-training"
   },
 
   {
