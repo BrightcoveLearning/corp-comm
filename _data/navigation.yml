@@ -73,6 +73,8 @@
       url: /experiences/controlling-access-experience.html
     - name: Creating Access Control Profiles
       url: /experiences/creating-access-control-profiles.html
+    - name: Creating Push Notifications
+      url: /experiences/creating-and-managing-push-notifications.html
     - name: Creating and Managing Experiences
       url: /experiences/creating-and-managing-experiences.html
     - name: Customizing Mobile App Experiences
