@@ -40,6 +40,11 @@
   },
 
   {
+      "newURL": "https://engage.support.brightcove.com/support/brightcove-answer.html",
+      "oldURL": "/brightcove-answer"
+  },
+
+  {
       "newURL": "https://engage.support.brightcove.com/get-started/brightcove-engage-system-requirements.html",
       "oldURL": "/brightcove-engage-system-requirements"
   },
