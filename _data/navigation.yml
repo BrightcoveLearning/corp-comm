@@ -3,7 +3,7 @@
   url: /index.html
 - section: 
   name: Getting Started
-  url: /get-started/
+  url: /get-started/index.html
   docs:
     - name: Brightcove Engage System Requirements
       url: /get-started/brightcove-engage-system-requirements.html
@@ -25,7 +25,7 @@
       url: /get-started/using-brightcove-engage-app.html
 - section: 
   name: Managing Videos
-  url: /videos/
+  url: /videos/index.html
   docs:
     - name: Adding Text Tracks
       url: /videos/adding-text-tracks-to-a-video.html
@@ -53,7 +53,7 @@
       url: /videos/working-with-shared-videos.html
 - section: 
   name: Creating Experiences
-  url: /experiences/
+  url: /experiences/index.html
   docs:
     - name: Adding a Logo to Mobile App Experience Pages
       url: /experiences/adding-logo-mobile-app-experience.html
@@ -109,7 +109,7 @@
       url: /experiences/styling-web-experiences.html
 - section: 
   name: Managing Live Events
-  url: /live/
+  url: /live/index.html
   docs:
     - name: Creating and Managing Live Events
       url: /live/creating-and-managing-live-events-using-live-module.html
@@ -117,13 +117,13 @@
       url: /live/creating-video-clips.html
 - section: 
   name: Reviewing Analytics
-  url: /analytics/
+  url: /analytics/index.html
   docs:
     - name: Reviewing Video Analytics
       url: /analytics/reviewing-video-analytics.html
 - section: 
   name: Administering Accounts
-  url: /admin/
+  url: /admin/index.html
   docs:
     - name: Managing Account Information
       url: /admin/managing-account-information.html
@@ -139,13 +139,13 @@
       url: /admin/managing-video-fields.html
 - section: 
   name: Release Notes
-  url: /release-notes/
+  url: /release-notes/index.html
   docs:
     - name: 2020
       url: /release-notes/2020.html
 - section: 
   name: Support
-  url: /support/
+  url: /support/index.html
   docs:
     - name: 'Brightcove Answers'
       url: '/support/brightcove-answer.html'
