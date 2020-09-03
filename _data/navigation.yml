@@ -115,6 +115,8 @@
       url: /live/creating-and-managing-live-events-using-live-module.html
     - name: Creating Video Clips
       url: /live/creating-video-clips.html
+    - name: Using the Control Room
+      url: /live/viewing-live-event-info-control-room.html
 - section: 
   name: Reviewing Analytics
   url: /analytics/index.html
