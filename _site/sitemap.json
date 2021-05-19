@@ -295,6 +295,11 @@
   },
 
   {
+      "newURL": "https://engage.support.brightcove.com/support/reset-support-portal-password.html",
+      "oldURL": "/reset-support-portal-password"
+  },
+
+  {
       "newURL": "https://engage.support.brightcove.com/analytics/reviewing-video-analytics.html",
       "oldURL": "/reviewing-video-analytics"
   },
