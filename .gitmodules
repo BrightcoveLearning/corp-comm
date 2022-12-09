@@ -29,7 +29,7 @@
 [submodule "assets/s-site-assets-scripts"]
   path = assets/s-site-assets-scripts
   url = https://github.com/BrightcoveLearning/s-site-assets-scripts
-  branch = mainz
+  branch = main
 [submodule "assets/s-site-assets-images"]
   path = assets/s-site-assets-images
   url = https://github.com/BrightcoveLearning/s-site-assets-images
